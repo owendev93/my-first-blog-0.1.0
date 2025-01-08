@@ -361,4 +361,45 @@ html{
     width: 50%;
 }
 /* End of Landing*/
+
+/* Skills */
+.skills{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading{
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.sub-heading{
+    font-size: 2rem;
+    color: #29a587;
+    text-transform: uppercase;
+}
+
+.sub-heading span{
+    font-family: "Caveat", cursive;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.skills .section-border{
+    position: absolute;
+    left: 18rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* End of Skills */
 /* End of Container*/
