@@ -39,10 +39,19 @@ html{
     width: 3rem;
     height: 0.2rem;
     background-color: #bbb;
+    transition: transform 0.3s;
+}
+
+.change .line-1{
+    transform: rotateZ(45deg) translate(0.7rem, -0.1rem);
+}
+
+.change .line-2{
+    transform: rotateZ(-45deg) translate(0.7rem, -0.1rem);
 }
 
 .navigation{
-    position: fixed;
+    position: fixed;;
     top: -8rem;
     right: -63em;
     width: 50rem;
@@ -56,9 +65,34 @@ html{
     transition: all 0.6s;
 }
 
+.change .navigation{
+    top: 0;
+    right: 0;
+    transform: rotateZ(0);
+}
+
+.navigation .section-border{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .navigation .section-border{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 0.7s;
+}
+
 .nav-items{
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+.change .nav-items{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 0.7s;
 }
 
 .nav-items a{
@@ -68,6 +102,11 @@ html{
     letter-spacing: 0.2rem;
     color: #eee;
     margin: 1rem 0;
+    transition: color 0.5s;
+}
+
+.nav-items a:hover{
+    color:#29a587;
 }
 /* End of Navigation */
 
