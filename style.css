@@ -495,17 +495,17 @@ html{
 }
 
 .skills-card:nth-child(3) .skills-card-progress{
-    right: 25%;
+    right: 20%;
  }
 
 .skills-card:nth-child(3) .skills-card-progress::before{
     right: 2.5rem;
-    width: 25rem;
+    width: 29rem;
 }
 
 .skills-card:nth-child(3) .skills-card-progress::after{
-    right: -11.1rem;
-    width: 11rem;
+    right: -7.8rem;
+    width: 7.5rem;
 }
 
 /* End of Skills */
