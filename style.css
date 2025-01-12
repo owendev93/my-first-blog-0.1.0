@@ -551,4 +551,66 @@ html{
 }
 
 /* End of Skills */
+
+/* Projects */
+.projects{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-cards{
+    width: 140rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+    z-index: 100;
+}
+
+.project-card{
+    width: 40rem;
+    height: 55rem;
+    background-color: #1d222a;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-img{
+    width: 36rem;
+    height: 20rem;
+}
+
+.project-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 1.5s;
+}
+
+.project-img img:hover{
+    transform: scale(1.3);
+}
+
+.projects .section-border{
+    height: 140rem;
+    position: absolute;
+    top: 50%;
+    right: 15rem;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+
+/* end of Projects */
 /* End of Container*/
