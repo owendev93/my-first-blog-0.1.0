@@ -663,8 +663,6 @@ html{
     margin: 0;
 }
 /* End of Projects */
-
-/* Contact */
 .contact{
     width: 100%;
     height: 100vh;
@@ -673,5 +671,13 @@ html{
     flex-direction: column;
     align-items: center;
 }
+
+.contact .section-border{
+    position: absolute;
+    left: 20rem;
+    top: 30%;
+}
+/* Contact */
+
 /* End of Contact */
 /* End of Container*/
