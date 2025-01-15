@@ -663,6 +663,8 @@ html{
     margin: 0;
 }
 /* End of Projects */
+
+/* Contact */
 .contact{
     width: 100%;
     height: 100vh;
@@ -688,8 +690,100 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-/* Contact */
+ }
 
+ .contact-left div{
+    display: flex;
+    align-items: center;
+    margin: 3rem  0;
+ }
+
+ .contact-left i{
+    width: 5rem;
+    height: 5rem;
+    background-color: #1d222a;
+    border: 0.2rem solid #bbb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    margin-right: 9rem;
+    position: relative;
+ }
+
+ .contact-left i::after{
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #bbb;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4rem;
+ }
+
+ .contact-info{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contact-info span{
+    width: 100%;
+ }
+
+ .contact-info span:nth-child(1){
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+ }
+
+ .contact-info span:nth-child(2){
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #777;
+ }
+
+ .contact-right{
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .input-groups{
+    display: flex;
+ }
+
+ .input-group{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .input-group label{
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 1.5rem 2rem;
+ }
+
+ .input-group label i{
+    font-size: 1.2rem;
+    color: #29a587;
+ }
+
+ .input-group input, textarea{
+    height: 5rem;
+    margin: 0 3rem 3rem 0;
+    background-color: #1d222a;
+    border: 0.2rem solid #777;
+ }
 /* End of Contact */
 /* End of Container*/
