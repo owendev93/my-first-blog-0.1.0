@@ -378,6 +378,95 @@ html{
     top: 50%;
     transform: translateY(-50%);
 }
+
+.education-content{
+    width: 110rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ /*
+.nav-education{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.5rem;
+ }
+
+.education-card div{
+    display: flex;
+    align-items: center;
+    margin: 3rem  0;
+ }
+
+ .education-card i{
+    width: 7rem;
+    height: 7rem;
+    background-color: #1d222a;
+    border: 0.2rem solid #bbb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #eee;
+    margin-right: 9rem;
+    position: relative;
+ }
+
+ .education-card i::after{
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #bbb;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4rem;
+ }
+
+.education-info{
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .education-info span{
+    width: 100%;
+ }
+
+ .education-info div:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: -1rem;
+ }
+
+ .education-info div:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #29a587;
+    margin-bottom: -2rem;
+ }
+
+ .education-info div:nth-child(3){
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: -2rem;
+ }
+
+ .education-info div:nth-child(4){
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: -1rem;
+ }*/
 /* End Of Education */
 
 /* Skills */
