@@ -810,7 +810,7 @@ html{
     transform: translate(-50%, -50%);
     margin-top: 7rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
  }
 
@@ -871,7 +871,7 @@ html{
  }
 
  .contact-right{
-    width: 60rem;
+    width: 50rem;
     height: 60rem;
     display: flex;
     justify-content: center;
@@ -909,8 +909,8 @@ html{
  }
 
  .input-group input, textarea{
-    height: 5rem;
-    margin: 0 3rem 3rem 0;
+    height: 6rem;
+    margin: 0 3rem 5rem 0;
     background-color: #1d222a;
     border: 0.2rem solid #777;
     border-radius: 3rem;
@@ -930,7 +930,23 @@ html{
     resize: none;
  }
 
+ .contact-btn{
+    width: 35rem;
+    height: 5rem;
+    background-color: #29a587;
+    border: 0.2rem solid #bbb;
+    border-radius: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    cursor: pointer; 
+ }
+
 /* End of Contact */
+
+/* Footer */
 .footer{
     width: 100%;
     height: 10rem;
@@ -943,7 +959,7 @@ html{
 .icons i{
     font-size: 2rem;
     color: #fff;
-    margin-right: 2rem;
+     margin-right: 2rem;
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -967,7 +983,5 @@ html{
     font-weight: bold;
     color: #29a587; 
 }
-/* Footer */
-
 /* End of Footer */
 /* End of Container*/
