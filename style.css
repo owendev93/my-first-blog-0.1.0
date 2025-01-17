@@ -63,6 +63,7 @@ html{
     padding-left: 8rem;
     transform: rotateZ(-15deg);
     transition: all 0.6s;
+    z-index: 150;
 }
 
 .change .navigation{
