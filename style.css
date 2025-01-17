@@ -871,31 +871,37 @@ html{
  }
 
  .contact-right{
-    width: 50rem;
+    width: 60rem;
     height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: -5rem;
  }
 
  .input-groups{
     display: grid;    /* Cambiamos a un diseño de cuadrícula */
-    grid-template-columns: repeat(3, 1fr);   /* Cambiamos a un diseño de cuadrícula */
-    gap: 0.1rem;      /* Espacio entre filas y columnas */
+    grid-template-columns: repeat(2, 1fr);   /* Cambiamos a un diseño de cuadrícula */
+    gap: -1rem;      /* Espacio entre filas y columnas */
+    width: 100%;
  }
 
  .input-group{
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: -5rem;
  }
 
- .input-group:nth-child(4) {
+ .input-group:nth-child(1) {
+    grid-column: 1 / -1; /* Hace que el cuarto input ocupe todo el ancho (de la primera a la última columna) */
+}
+
+.input-group:nth-child(4) {
     grid-column: 1 / -1; /* Hace que el cuarto input ocupe todo el ancho (de la primera a la última columna) */
 }
 
  .input-group label{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -904,24 +910,25 @@ html{
  }
 
  .input-group label i{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #29a587;
  }
 
- .input-group input, textarea{
-    height: 6rem;
-    margin: 0 3rem 5rem 0;
+ .input-group input, .input-group textarea{
+    width: 100%;
+    height: 5rem;
+    margin: 0 2rem 2rem 0;
     background-color: #1d222a;
     border: 0.2rem solid #777;
     border-radius: 3rem;
     font-size: 1.6rem;
     font-weight: 300;
     color: #fff;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 2rem;
  }
 
  .input-group input{
-    width: 35rem;
+    width: 100%;
  }
 
  .input-group textarea{
@@ -931,8 +938,8 @@ html{
  }
 
  .contact-btn{
-    width: 35rem;
-    height: 5rem;
+    width: 100%;
+    height: 4rem;
     background-color: #29a587;
     border: 0.2rem solid #bbb;
     border-radius: 3rem;
@@ -941,7 +948,8 @@ html{
     font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
-    cursor: pointer; 
+    cursor: pointer;
+    align-items: center;
  }
 
 /* End of Contact */
