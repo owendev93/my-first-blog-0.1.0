@@ -375,7 +375,7 @@ html{
 
 .education .section-border{
     position: absolute;
-    left: 18rem;
+    left: 29rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -423,12 +423,12 @@ html{
     display: flex;
     box-sizing: border-box;
     border: 2px solid #1a1f24;
-    color: #637185;
+    color: #fff;
   }
   
   .value:focus,
   .value:active {
-    background-color: #1a1f24;
+    background-color: #29a587;
     outline: none;
     margin-left: 17px;
   }
@@ -440,7 +440,7 @@ html{
     left: -15px;
     width: 5px;
     height: 80%;
-    background-color: #2f81f7;
+    background-color: #29a587;
     border-radius: 5px;
     opacity: 0;
     transition: 1s;
@@ -460,33 +460,6 @@ html{
     filter: blur(1.5px);
     transform: scale(0.95, 0.95);
   }
-  
-
-/*
-
-.nav-education-items{
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-education-items a{
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: #eee;
-    margin: 1rem 0;
-    transition: color 0.5s;
-}  Hasta aqui son los cambios de hoy
-
-
- /*
-.nav-education{
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 0.5rem;
- }
 
 .education-card div{
     display: flex;
@@ -531,14 +504,14 @@ html{
  }
 
  .education-info div:nth-child(1){
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -1rem;
  }
 
  .education-info div:nth-child(2){
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #29a587;
     margin-bottom: -2rem;
@@ -555,9 +528,36 @@ html{
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
-    margin-bottom: -1rem;
- }*/
+    margin-bottom: -2rem;
+ }
 /* End Of Education */
+
+/* Education-Experience */
+.experience{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading{
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.experience .section-border{
+    position: absolute;
+    left: 29rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* End of Education-Experience */
 
 /* Skills */
 .skills{
