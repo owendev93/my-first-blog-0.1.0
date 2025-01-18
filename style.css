@@ -542,15 +542,6 @@ html{
     align-items: center;
 }
 
-.section-heading{
-    font-size: 6rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: #fff;
-    margin-bottom: 3rem;
-}
-
 .experience .section-border{
     position: absolute;
     left: 29rem;
@@ -593,7 +584,7 @@ html{
 
 .skills .section-border{
     position: absolute;
-    left: 18rem;
+    left: 29rem;
     top: 50%;
     transform: translateY(-50%);
 }
