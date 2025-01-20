@@ -375,7 +375,7 @@ html{
 
 .education .section-border{
     position: absolute;
-    left: 29rem;
+    left:18rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -401,9 +401,9 @@ html{
     transition: 1s;
     padding: 10px;
     overflow: hidden;
-  }
+}
   
-  .value {
+.value {
     font-size: 15px;
     background-color: transparent;
     border: none;
@@ -416,24 +416,24 @@ html{
     border-radius: 10px;
     transition: 1s;
     box-sizing: border-box;
-  }
+}
   
-  .value:not(:active):hover,
-  .value:focus {
+.value:not(:active):hover,
+.value:focus {
     display: flex;
     box-sizing: border-box;
     border: 2px solid #1a1f24;
     color: #fff;
-  }
+}
   
-  .value:focus,
-  .value:active {
+.value:focus,
+.value:active {
     background-color: #29a587;
     outline: none;
     margin-left: 17px;
-  }
+}
   
-  .value::before {
+.value::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -444,30 +444,30 @@ html{
     border-radius: 5px;
     opacity: 0;
     transition: 1s;
-  }
+}
   
-  .value:focus::before,
-  .value:active::before {
+.value:focus::before,
+.value:active::before {
     opacity: 1;
-  }
+}
   
-  .value svg {
+.value svg {
     width: 20px;
-  }
+}
   
-  .education-content-left:hover > :not(.value:hover) {
+.education-content-left:hover > :not(.value:hover) {
     transition: 300ms;
     filter: blur(1.5px);
     transform: scale(0.95, 0.95);
-  }
+}
 
 .education-card div{
     display: flex;
     align-items: center;
     margin: 3rem  0;
- }
+}
 
- .education-card i{
+.education-card i{
     width: 7rem;
     height: 7rem;
     background-color: #1d222a;
@@ -480,9 +480,9 @@ html{
     color: #eee;
     margin-right: 9rem;
     position: relative;
- }
+}
 
- .education-card i::after{
+.education-card i::after{
     content: "";
     width: 4rem;
     height: 0.2rem;
@@ -491,47 +491,59 @@ html{
     top: 50%;
     transform: translateY(-50%);
     right: -4rem;
- }
+}
 
 .education-info{
     width: 60rem;
     display: flex;
     flex-direction: column;
- }
+}
 
- .education-info span{
+.education-info span{
     width: 100%;
- }
+}
 
- .education-info div:nth-child(1){
+.education-info div:nth-child(1){
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -1rem;
- }
+}
 
- .education-info div:nth-child(2){
+.education-info div:nth-child(2){
     font-size: 2rem;
     font-weight: bold;
     color: #29a587;
     margin-bottom: -2rem;
- }
+}
 
- .education-info div:nth-child(3){
+.education-info div:nth-child(3){
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -2rem;
- }
+}
 
- .education-info div:nth-child(4){
+.education-info div:nth-child(4){
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -2rem;
- }
+}
 /* End Of Education */
 
+.education-content-right > div {
+    display: none; /* Ocultar todas las páginas inicialmente */
+}
+  
+.education-content-right > div.active {
+    display: block; /* Mostrar solo la página activa */
+}
+  
+.education-content-left .value.active {
+    background-color: #29a587; /* Opcional: Cambia el estilo del botón activo */
+}
+  
 /* Education-Experience */
 .experience{
     width: 100%;
