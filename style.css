@@ -1021,8 +1021,8 @@ html{
     }
 
     .dev-work span:nth-child(1){
-       font-size: 2rem;
-       width: 35%; 
+        font-size: 2rem;
+        width: 35%; 
     }
 
     .dev-experience{
