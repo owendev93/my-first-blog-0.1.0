@@ -663,11 +663,11 @@ html{
     align-items: center;
 }
 
-.projects-cards{
+.swiper{
     width: 140rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 10rem;
     padding-bottom: 10rem;
     z-index: 100;
