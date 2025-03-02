@@ -663,16 +663,13 @@ html{
     align-items: center;
 }
 
-.projects-cards{
+.project-cards{
     width: 140rem;
+    margin: 8rem 0 0 10rem;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 10rem;
-    padding-bottom: 10rem;
-    z-index: 100;
 }
+
 .project-card{
     width: 40rem;
     height: 55rem;
