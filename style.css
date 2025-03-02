@@ -376,7 +376,7 @@ html{
 .education .section-border{
     position: absolute;
     left:18rem;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 }
 
@@ -661,6 +661,8 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .projects-cards{
@@ -773,18 +775,19 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 8rem;
 }
 
 .contact .section-border{
     position: absolute;
     left: 20rem;
-    top: 30%;
+    top: 15%;
 }
 
 .contact-content{
     width: 120rem;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 7rem;
@@ -793,13 +796,13 @@ html{
     align-items: center;
 }
 
- .contact-left div{
+.contact-left div{
     display: flex;
     align-items: center;
     margin: 3rem  0;
- }
+}
 
- .contact-left i{
+.contact-left i{
     width: 5rem;
     height: 5rem;
     background-color: #1d222a;
@@ -812,9 +815,9 @@ html{
     color: #eee;
     margin-right: 9rem;
     position: relative;
- }
+}
 
- .contact-left i::after{
+.contact-left i::after{
     content: "";
     width: 4rem;
     height: 0.2rem;
@@ -823,55 +826,55 @@ html{
     top: 50%;
     transform: translateY(-50%);
     right: -4rem;
- }
+}
 
- .contact-info{
+.contact-info{
     width: 50rem;
     display: flex;
     flex-direction: column;
- }
+}
 
- .contact-info span{
+.contact-info span{
     width: 100%;
- }
+}
 
- .contact-info span:nth-child(1){
+.contact-info span:nth-child(1){
     font-family: "Caveat", cursive;
     font-size: 3rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 0.5rem;
- }
+}
 
- .contact-info span:nth-child(2){
+.contact-info span:nth-child(2){
     font-size: 1.6rem;
     font-weight: 300;
     color: #777;
- }
+}
 
- .contact-right{
+.contact-right{
     width: 60rem;
     height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: -5rem;
- }
+}
 
- .input-groups{
+.input-groups{
     display: grid;    /* Cambiamos a un diseño de cuadrícula */
     grid-template-columns: repeat(2, 1fr);   /* Cambiamos a un diseño de cuadrícula */
     gap: -1rem;      /* Espacio entre filas y columnas */
     width: 100%;
- }
+}
 
- .input-group{
+.input-group{
     display: flex;
     flex-direction: column;
     gap: -5rem;
- }
+}
 
- .input-group:nth-child(1) {
+.input-group:nth-child(1) {
     grid-column: 1 / -1; /* Hace que el cuarto input ocupe todo el ancho (de la primera a la última columna) */
 }
 
@@ -879,21 +882,21 @@ html{
     grid-column: 1 / -1; /* Hace que el cuarto input ocupe todo el ancho (de la primera a la última columna) */
 }
 
- .input-group label{
+.input-group label{
     font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: #fff;
     margin: 0 0 1.5rem 2rem;
- }
+}
 
- .input-group label i{
+.input-group label i{
     font-size: 1rem;
     color: #29a587;
- }
+}
 
- .input-group input, .input-group textarea{
+.input-group input, .input-group textarea{
     width: 100%;
     height: 5rem;
     margin: 0 2rem 2rem 0;
@@ -904,19 +907,19 @@ html{
     font-weight: 300;
     color: #fff;
     padding: 1rem 2rem;
- }
+}
 
- .input-group input{
+.input-group input{
     width: 100%;
- }
+}
 
- .input-group textarea{
+.input-group textarea{
     height: 12rem;
     margin-bottom: 2rem;
     resize: none;
- }
+}
 
- .contact-btn{
+.contact-btn{
     width: 100%;
     height: 4rem;
     background-color: #29a587;
@@ -929,7 +932,7 @@ html{
     letter-spacing: 0.2rem;
     cursor: pointer;
     align-items: center;
- }
+}
 
 /* End of Contact */
 
@@ -946,7 +949,7 @@ html{
 .icons i{
     font-size: 2rem;
     color: #fff;
-     margin-right: 2rem;
+    margin-right: 2rem;
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -965,7 +968,7 @@ html{
 }
 
 .author span{
-   font-family: "Caveat", cursive;
+    font-family: "Caveat", cursive;
     font-size: 2.5rem;
     font-weight: bold;
     color: #29a587; 
