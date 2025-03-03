@@ -1,3 +1,4 @@
+//Menu lateral
 const menuIcon = document.querySelector(".menu-icon");
 const container = document.querySelector(".container");
 
