@@ -983,6 +983,7 @@ html{
     z-index: 200;
     border: 2rem solid transparent;
     transition: all 1s ease;
+    transform: scale(0);
 }
 
 #button-up:hover{

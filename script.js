@@ -7,7 +7,6 @@ menuIcon.addEventListener("click",()=>{
 });
 
 
-
 //descarga de CV
 document.getElementById("downloadcv").addEventListener("click", function() {
     let link = document.createElement("a");
@@ -31,5 +30,14 @@ function scrollUp(){
             window.requestAnimationFrame(scrollUp);
             window.scrollTo(0, currentScroll - (currentScroll / 0.8));
         }
-        
+}
+
+buttonUp = document.getElementById("button-up");
+window.onscroll = function(){
+    var scroll = document.documentElement.scrollTop;
+    if(scroll > 500){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
 }
