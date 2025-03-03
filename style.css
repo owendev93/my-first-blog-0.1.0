@@ -18,7 +18,7 @@ html{
 .container {
     width: 100%;
     height: 100%;
-    background: linear-gradient(#232932, #2c3138, #232932);
+    background: linear-gradient(#424949, #515A5A, #515A5A);
 }
 
 /* Navigation */
@@ -108,7 +108,7 @@ html{
 }
 
 .nav-items a:hover{
-    color:#29a587;
+    color:#E67E22;
 }
 /* End of Navigation */
 
@@ -147,7 +147,7 @@ html{
     font-size: 5rem;
     font-family: "Caveat", cursive;
     font-weight: bold;
-    color: #29a587;
+    color: #E67E22;
 }
 
 .banner {
@@ -171,10 +171,10 @@ html{
     width: 3rem;
     height: 3rem;
     border: 0.2rem solid #bbb;
-    background-color: #1d222a;
+    background-color: #515A5A;
     border-radius: 50%;
     position: absolute;
-    left: -1.65rem;
+    left: -1.60rem;
     top: -3rem;
 }
 
@@ -183,10 +183,10 @@ html{
     width: 3rem;
     height: 3rem;
     border: 0.2rem solid #bbb;
-    background-color: #1d222a;
+    background-color: #515A5A;
     border-radius: 50%;
     position: absolute;
-    left: -1.65rem;
+    left: -1.60rem;
     bottom: -3rem;
 }
 
@@ -202,7 +202,7 @@ html{
 }
 
 .greeting span{
-    color: #29a587;
+    color: #E67E22;
 }
 
 .name{
@@ -214,7 +214,7 @@ html{
 }
 
 .name span{
-    color: #29a587;
+    color: #E67E22;
 }
 
 .prof{
@@ -259,7 +259,7 @@ html{
 /* Efecto al pasar el cursor */
 .social-media i:hover {
     transform: scale(2); /* Aumenta el tamaño en 30% */
-    color: #29a587; /* Opcional: cambia de color al pasar el mouse */
+    color: #E67E22; /* Opcional: cambia de color al pasar el mouse */
 }
 
 .btn{
@@ -280,7 +280,7 @@ html{
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #29a587;
+    background-color: #E67E22;
     border-radius: 3rem;
     position: absolute;
     top: 0;
@@ -320,7 +320,7 @@ html{
 .dev-img-wrapper {
     width: 50rem;
     height: 50rem;
-    background-color: #29a587;
+    background-color: #E67E22;
     border-radius: 50%;
     padding: 2rem 2rem 0 2rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -366,7 +366,7 @@ html{
 }
 
 .dev-work span:nth-child(2){
-    color: #29a587;
+    color: #E67E22;
     width: 50%;
 }
 /* End of Landing*/
@@ -450,7 +450,7 @@ html{
 .education-info div:nth-child(2){
     font-size: 2rem;
     font-weight: bold;
-    color: #29a587;
+    color: #E67E22;
     margin-bottom: -2rem;
 }
 
@@ -492,7 +492,7 @@ html{
 
 .sub-heading{
     font-size: 2rem;
-    color: #29a587;
+    color: #E67E22;
     text-transform: uppercase;
 }
 
@@ -537,7 +537,7 @@ html{
 }
 
 .skill span{
-    color: #29a587;
+    color: #E67E22;
 }
 
 .skills-card p{
@@ -560,7 +560,7 @@ html{
 .skills-card-progress::before{
     content: "";
     height: 0.2rem;
-    background-color: #29a587;
+    background-color: #E67E22;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -723,7 +723,7 @@ html{
     font-size: 1.6rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: #29a587;
+    color: #E67E22;
     letter-spacing: 0.1rem;
 }
 
@@ -752,7 +752,7 @@ html{
 }
 
 .project-btn i{
-    color: #29a587;
+    color: #E67E22;
     margin-left: 1rem;
     transition: margin-left 0.3s;
 }
@@ -901,7 +901,7 @@ html{
 
 .input-group label i{
     font-size: 1rem;
-    color: #29a587;
+    color: #E67E22;
 }
 
 .input-group input, .input-group textarea{
@@ -930,7 +930,7 @@ html{
 .contact-btn{
     width: 100%;
     height: 4rem;
-    background-color: #29a587;
+    background-color: #E67E22;
     border: 0.2rem solid #bbb;
     border-radius: 3rem;
     color: #fff;
@@ -971,7 +971,7 @@ html{
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #29a587;
+    color: #E67E22;
     margin-right: 1rem;
 }
 
@@ -979,7 +979,7 @@ html{
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #29a587; 
+    color: #E67E22; 
 }
 /* End of Footer */
 /* End of Container*/
