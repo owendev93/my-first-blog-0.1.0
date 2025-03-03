@@ -933,18 +933,36 @@ html{
 }
 
 .contact-btn{
-    width: 100%;
+    width: 50rem;
     height: 4rem;
-    background-color: #E67E22;
     border: 0.2rem solid #bbb;
     border-radius: 3rem;
-    color: #fff;
+    background-color: transparent;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
+    color: #fff;
     cursor: pointer;
-    align-items: center;
+    margin-right: 7rem;
+    position: relative;
+}
+
+.contact-btn::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #E67E22;
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.contact-btn:hover::before{
+    transform: scale(1);
+    transition: transform 0.5s;
 }
 
 /* End of Contact */
