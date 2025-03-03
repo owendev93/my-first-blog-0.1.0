@@ -407,7 +407,7 @@ html{
 .education-card i{
     width: 7rem;
     height: 7rem;
-    background-color: #1d222a;
+    background-color: #515A5A;
     border: 0.2rem solid #bbb;
     border-radius: 50%;
     display: flex;
@@ -550,7 +550,7 @@ html{
 .skills-card-progress{
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #1d222a;
+    background-color: #515A5A;
     border: 0.2rem solid #bbb;
     border-radius: 50%;
     position: absolute;
@@ -686,7 +686,8 @@ html{
 .project-card{
     width: 40rem;
     height: 55rem;
-    background-color: #1d222a;
+    background-color: #424949;
+    opacity: 0.9;
     margin: 1rem;
     padding: 2rem;
     border-radius: 1rem;
