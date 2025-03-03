@@ -253,6 +253,13 @@ html{
     margin-right: 2rem;
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Suaviza el efecto */
+}
+
+/* Efecto al pasar el cursor */
+.social-media i:hover {
+    transform: scale(2); /* Aumenta el tamaño en 30% */
+    color: #29a587; /* Opcional: cambia de color al pasar el mouse */
 }
 
 .btn{
