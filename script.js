@@ -17,3 +17,19 @@ document.getElementById("downloadcv").addEventListener("click", function() {
     link.click();
     document.body.removeChild(link);
 });
+
+
+
+//Scroll Botton Up
+document.getElementById("button-up").addEventListener("click", function(){
+    scrollUp();
+});
+
+function scrollUp(){
+    var currentScroll = document.documentElement.scrollTop;
+        if(currentScroll > 0){
+            window.requestAnimationFrame(scrollUp);
+            window.scrollTo(0, currentScroll - (currentScroll / 0.8));
+        }
+        
+}

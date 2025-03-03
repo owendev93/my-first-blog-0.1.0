@@ -967,7 +967,7 @@ html{
 /* End of Contact */
 
 /*Botton Up*/
-.botton-up{
+#button-up{
     width: 6rem;
     height: 6rem;
     font-size: 5rem;
@@ -982,14 +982,15 @@ html{
     cursor: pointer;
     z-index: 200;
     border: 2rem solid transparent;
+    transition: all 1s ease;
 }
 
-.botton-up:hover{
-    transform: scale(1.1);
+#button-up:hover{
+    transform: scale(1.2);
     border-color: rgba(0, 0, 0, 0.1);
 }
 
-.botton-up i{
+#button-up i{
     font-size: 5rem;
     color: #424949;
     transition: transform 0.5s;
