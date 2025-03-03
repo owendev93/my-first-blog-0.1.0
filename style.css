@@ -201,9 +201,10 @@ html{
     letter-spacing: 0.1rem;
 }
 
-.greeting span{
+.developer-info .greeting span{
     color: #E67E22;
 }
+
 
 .name{
     font-size: 6.5rem;
