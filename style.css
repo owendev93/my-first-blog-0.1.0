@@ -329,8 +329,12 @@ html{
 }
 
 .dev-img-wrapper img {
-    width: 100;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    max-width: 100%;
+    object-fit: cover;
+    top: 35px; /* Ajusta este valor según sea necesario */
 }
 
 .dev-work{
@@ -512,10 +516,11 @@ html{
 }
 
 .skills-cards {
-    width: 140rem;
-    margin: 8rem 0 0 10rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Se ajusta automáticamente */
+    grid-template-rows: auto auto;
+    gap: 2rem; /* Espacio entre tarjetas */
+    margin-top: 5rem;
 }
 
 .skills-card{
@@ -799,7 +804,8 @@ html{
 }
 
 .contact-content{
-    width: 120rem;
+    width: 90%;
+    max-width: 120rem;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -1180,6 +1186,31 @@ html{
     }
 }
 
+@media (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        right: -100vw;
+        justify-content: center;
+    }
+
+    .cv-btn {
+        width: 100%; /* Que ocupe todo el ancho disponible */
+        max-width: 30rem;
+    }
+
+    .section-border {
+        display: none; /* Oculta la línea divisoria */
+    }
+
+    .skills-cards, .projects-cards {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    .change .navigation {
+        right: 0;
+    }
+}
+
 @media(max-width: 700px){
     html{
         font-size: 35%;
@@ -1237,8 +1268,8 @@ html{
         width: 50rem;
     }
 
-     .icons{
+    .icons{
         display: none;
-     }
+    }
 }
 /* End of Responsive */
