@@ -202,9 +202,23 @@ html{
 }
 
 .developer-info .greeting span{
+    width: 15ch;
     color: #E67E22;
+    font-weight: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 2s steps(15), blink 0.9s step-end infinite;
+    
 }
 
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}
 
 .name{
     font-size: 6.5rem;
