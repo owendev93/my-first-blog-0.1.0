@@ -319,10 +319,10 @@ html{
 }
 
 .dev-img-wrapper {
-    width: 70rem;
-    height: 70rem;
+    width: 55rem;
+    height: 55rem;
     /*background-color: #E67E22;*/
-    /*border-radius: 50%;*/
+    border-radius: 50%;
     padding: 0 1rem 5rem 1rem;
     /*box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);*/
     /*overflow: hidden;*/
@@ -334,7 +334,7 @@ html{
     position: relative;
     max-width: 100%;
     object-fit: cover;
-    top: 35px; /* Ajusta este valor según sea necesario */
+    top: 0; /* Ajusta este valor según sea necesario */
 }
 
 .dev-work{
