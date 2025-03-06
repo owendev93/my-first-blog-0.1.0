@@ -319,13 +319,13 @@ html{
 }
 
 .dev-img-wrapper {
-    width: 50rem;
-    height: 50rem;
-    background-color: #E67E22;
-    border-radius: 50%;
-    padding: 2rem 2rem 0 2rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    width: 70rem;
+    height: 70rem;
+    /*background-color: #E67E22;*/
+    /*border-radius: 50%;*/
+    padding: 0 1rem 5rem 1rem;
+    /*box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);*/
+    /*overflow: hidden;*/
 }
 
 .dev-img-wrapper img {
