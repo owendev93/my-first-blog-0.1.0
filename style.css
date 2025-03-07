@@ -37,23 +37,27 @@ html{
 }
 
 .sidebar:hover {
-    width: 250px;
+    width: 205px;
 }
 
 .sidebar-nav{
     padding: 20px 0;
     list-style: none;
-    padding-top: 15em;
+    padding-top: 22em;
 }
 
 .nav-item {
     position: relative;
-    padding: 15px 20px;
-    margin: 8px 15px;
+    padding: 10px 20px;
+    margin: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
     white-space: nowrap;
+}
+
+.nav-item:nth-child(5) {
+    margin-top: 55rem;
 }
 
 .nav-item:hover {
@@ -64,14 +68,14 @@ html{
 .nav-item i {
     color: #fff;
     margin-top: 20px;
-    font-size: 1.5em;
-    margin-right: 20px;
+    font-size: 2em;
+    margin-right: 25px;
     width: 50px;
 }
 
 .nav-item span {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.7em;
     font-weight: 500;
     opacity: 0;
     transition: 0.3s;
@@ -81,6 +85,7 @@ html{
     opacity: 1;
 }
 
+
 .nav-item::before {
     content: '';
     position: absolute;
@@ -88,7 +93,7 @@ html{
     left: 0;
     width: 3px;
     height: 100%;
-    background: #fff;
+    background: #E67E22;
     transform: scale(0);
     transition: transform 0.3s;
 }
