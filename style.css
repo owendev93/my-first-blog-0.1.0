@@ -26,6 +26,7 @@ html{
     position: fixed;
     width: 80px;
     height: 100vh;
+    gap: 0.1rem;
     background: rgba(255,255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -47,8 +48,11 @@ html{
 }
 
 .nav-item {
+    align-items: center;
+    justify-content: center;
+    gap: 2px; /* Reduce la separación entre el icono y el texto */
     position: relative;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -57,7 +61,7 @@ html{
 }
 
 .nav-item:nth-child(5) {
-    margin-top: 55rem;
+    margin-top: 60rem;
 }
 
 .nav-item:hover {
@@ -70,6 +74,7 @@ html{
     margin-top: 20px;
     font-size: 2em;
     margin-right: 25px;
+    margin: 0;
     width: 50px;
 }
 
