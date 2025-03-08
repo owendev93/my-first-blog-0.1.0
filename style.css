@@ -388,7 +388,7 @@ html{
 
 .dev-work{
     width: 25rem;
-    height: 9rem;
+    height: 8rem;
     background-color: #1d222a;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -404,8 +404,8 @@ html{
 }
 
 .dev-experience{
-    bottom: 10rem;
-    right: 40rem;
+    bottom: 8rem;
+    right: 50rem;
 }
 
 .dev-projects{
