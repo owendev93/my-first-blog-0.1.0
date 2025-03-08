@@ -41,7 +41,7 @@ html{
 }
 
 .sidebar:hover {
-    width: 200px;
+    width: 180px;
 }
 
 .sidebar-nav{
@@ -68,7 +68,7 @@ html{
 }
 
 .sidebar-nav .nav-item i {
-    margin-right: 10px;
+    margin-right: -1rem;
     color: #fff; /* Color por defecto */
 }
 
