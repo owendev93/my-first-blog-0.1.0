@@ -343,11 +343,15 @@ html{
 
 .developer-img{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15rem; 
 }
 
 .dev-img-wrapper {
-    width: 65rem;
-    height: 65rem;
+    width: 80rem;
+    height: 70rem;
     /*background-color: #E67E22;*/
     border-radius: 50%;
     padding: 0 1rem 5rem 1rem;
