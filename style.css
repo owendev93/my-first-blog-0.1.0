@@ -1060,10 +1060,27 @@ html{
 .footer{
     width: 100%;
     height: 6rem;
-    border-top: 0.1rem solid #b90707;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    width: 75%; /* Ajusta el ancho de la línea según sea necesario */
+    border-top: 0.1rem solid #E67E22;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra la línea horizontalmente */
+}
+
+.icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem; /* Espacio entre los iconos */
 }
 
 .icons i{
@@ -1084,6 +1101,11 @@ html{
 .copyright, .author{
     font-size: 1.6rem;
     color: #fff;
+    margin: 0 15rem; /* Espacio entre los contenedores */
+}
+
+.copyright, .author, .icons{
+    margin: 0 20rem; /* Espacio entre los contenedores */
 }
 
 .copyright span{
