@@ -32,7 +32,7 @@ html{
     border-radius: 3rem;
     background: rgba(255,255, 255, 0.1);
     backdrop-filter: blur(15px);
-    border: 1px solid #f1a35e;
+    border-right: 1px solid #f1a35e;
     transition: 0.5s;
     overflow: hidden;
     z-index: 1000;
