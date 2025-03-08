@@ -141,9 +141,9 @@ html{
 
 .logo {
     position: absolute;
-    top: 4rem;
+    top: 8rem;
     left: 30rem;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .logo span:nth-child(1) {
@@ -151,20 +151,38 @@ html{
 }
 
 .logo span:nth-child(2) {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: "Caveat", cursive;
     font-weight: bold;
     color: #E67E22;
+}
+
+.logo i {
+    font-size: 5rem; /* Tamaño del icono */
+    color: #E67E22; /* Color del icono */
+    position: absolute;
+    left: 28rem;
+    top: 3rem; 
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
 
 .banner {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-left: 6rem;
     transform: translate(-50%,-50%);
     display: flex;
 }
 
+/*
 .section-border {
     width: 0.3rem;
     height: 55rem;
@@ -195,7 +213,7 @@ html{
     position: absolute;
     left: -1.60rem;
     bottom: -3rem;
-}
+}*/
 
 .developer-info{
     margin-right: 15rem;
@@ -569,11 +587,12 @@ html{
 }
 
 .skill span{
-    font-size: 2rem;
-    color: #eee;
+    font-size: 2.2rem;
+    color: #E67E22;
 }
 
-.skill span{
+.skill span i{
+    font-size: 3rem;
     color: #E67E22;
 }
 
