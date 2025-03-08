@@ -43,7 +43,7 @@ html{
 
 .sidebar-nav{
     padding: 20px 0;
-    list-style: none;
+    list-style-type: none;
     padding-top: 22em;
 }
 
@@ -62,6 +62,15 @@ html{
 
 .nav-item:nth-child(5) {
     margin-top: 50rem;
+}
+
+.sidebar-nav .nav-item i {
+    margin-right: 10px;
+    color: #fff; /* Color por defecto */
+}
+
+.sidebar-nav .nav-item.active i {
+    color: #E67E22; /* Color naranja cuando está activo */
 }
 
 .nav-item:hover {

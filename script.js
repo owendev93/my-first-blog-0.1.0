@@ -1,10 +1,10 @@
-//Menu lateral
+/*//Menu lateral
 const menuIcon = document.querySelector(".menu-icon");
 const container = document.querySelector(".container");
 
 menuIcon.addEventListener("click",()=>{
     container.classList.toggle("change");
-});
+});*/
 
 
 //descarga de CV
@@ -40,4 +40,32 @@ window.onscroll = function(){
     }else if(scroll < 500){
         buttonUp.style.transform = "scale(0)";
     }
-}
+};
+
+// Color de la barra de navegación al realizar Scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".sidebar-nav .nav-item");
+
+    function setActiveNavItem() {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navItems.forEach(li => {
+            li.classList.remove("active");
+            if (li.querySelector("a").getAttribute("href").includes(current)) {
+                li.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", setActiveNavItem);
+    setActiveNavItem(); // Llama a la función al cargar la página para establecer el estado activo inicial
+});
