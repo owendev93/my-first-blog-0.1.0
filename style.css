@@ -41,7 +41,7 @@ html{
 }
 
 .sidebar:hover {
-    width: 205px;
+    width: 200px;
 }
 
 .sidebar-nav{
@@ -53,9 +53,10 @@ html{
 .nav-item {
     align-items: center;
     justify-content: center;
-    gap: 2px; /* Reduce la separación entre el icono y el texto */
+    top: -9rem;
+    gap: 1px; /* Reduce la separación entre el icono y el texto */
     position: relative;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -64,7 +65,7 @@ html{
 }
 
 .nav-item:nth-child(5) {
-    margin-top: 50rem;
+    margin-top: 45rem;
 }
 
 .sidebar-nav .nav-item i {
@@ -102,7 +103,6 @@ html{
     opacity: 1;
 }
 
-
 .nav-item::before {
     content: '';
     position: absolute;
@@ -118,9 +118,8 @@ html{
 .nav-item:hover::before {
     transform: scaleY(1);
 }
-
-
  /*End of Navigation */
+
 
 /* Landing */
 .landing {
