@@ -54,7 +54,6 @@ html{
     align-items: center;
     justify-content: center;
     top: -9rem;
-    gap: 1px; /* Reduce la separación entre el icono y el texto */
     position: relative;
     padding: 10px 20px;
     margin: 8px 10px;
