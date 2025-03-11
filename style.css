@@ -454,6 +454,19 @@ html{
     margin-bottom: 3rem;
 }
 
+.sub-heading{
+    font-size: 4rem;
+    color: #E67E22;
+    text-transform: uppercase;
+}
+
+.sub-heading span{
+    font-family: "Caveat", cursive;
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
 .education-card div{
     display: flex;
     align-items: center;
@@ -537,38 +550,18 @@ html{
     align-items: center;
 }
 
-.sub-heading{
-    font-size: 2rem;
-    color: #E67E22;
-    text-transform: uppercase;
-}
-
-.sub-heading span{
-    font-family: "Caveat", cursive;
-    font-size: 3.5rem;
-    text-transform: capitalize;
-    color: #fff;
-}
-
-.skills .section-border{
-    position: absolute;
-    left: 18rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .skills-cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Se ajusta automáticamente */
     grid-template-rows: auto auto;
-    gap: 2rem; /* Espacio entre tarjetas */
+    gap: 4rem; /* Espacio entre tarjetas */
     margin-top: 5rem;
 }
 
 .skills-card{
     width: 40rem;
     height: 18rem;
-    margin: 3rem;
+    margin: 5rem;
     padding: 3 3rem;
     position: relative;   
 }
@@ -580,12 +573,12 @@ html{
 }
 
 .skill span{
-    font-size: 2.2rem;
+    font-size: 3.5rem;
     color: #E67E22;
 }
 
 .skill span i{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #E67E22;
 }
 
