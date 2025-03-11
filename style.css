@@ -434,7 +434,8 @@ html{
 }
 /* End of Landing*/
 
-/* Education */
+
+/*** Education ***/
 .education{
     width: 100%;
     height: 100vh;
@@ -444,21 +445,13 @@ html{
     align-items: center;
 }
 
-.education .section-border{
-    position: absolute;
-    left:18rem;
-    top: 40%;
-    transform: translateY(-50%);
-}
-
-.education-content{
-    width: 110rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
+.section-heading{
+    font-size: 8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    margin-bottom: 3rem;
 }
 
 .education-card div{
@@ -468,17 +461,17 @@ html{
 }
 
 .education-card i{
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     background-color: #515A5A;
     border: 0.2rem solid #bbb;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #eee;
-    margin-right: 9rem;
+    margin-right: 7rem;
     position: relative;
 }
 
@@ -504,28 +497,28 @@ html{
 }
 
 .education-info div:nth-child(1){
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -1rem;
 }
 
 .education-info div:nth-child(2){
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #E67E22;
     margin-bottom: -2rem;
 }
 
 .education-info div:nth-child(3){
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -2rem;
 }
 
 .education-info div:nth-child(4){
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: -2rem;
@@ -542,15 +535,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.section-heading{
-    font-size: 6rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: #fff;
-    margin-bottom: 3rem;
 }
 
 .sub-heading{
