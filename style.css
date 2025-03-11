@@ -159,16 +159,6 @@ html{
     color: #E67E22;
 }
 
-.logo i {
-    font-size: 5rem; /* Tamaño del icono */
-    color: #E67E22; /* Color del icono */
-    position: absolute;
-    left: 31rem;
-    top: 3rem; 
-    cursor: pointer;
-    animation: bounce 1.5s infinite;
-}
-
 /* Animación de rebote */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
@@ -219,6 +209,7 @@ html{
 
 .developer-info{
     margin-right: 15rem;
+    margin-top: 2rem;
 }
 
 .greeting{
@@ -283,19 +274,18 @@ html{
     margin-left: 1.2rem;
 }
 
-/*
 .about{
-    width: 60rem;
+    width: 75rem;
     font-family: "Caveat", cursive;
-    font-size: 2.5rem;
+    font-size: 4rem;
     line-height: 1;
     color: #a9abae;
     margin-bottom: 5rem;
-}*/
+}
 
 .social-media{
     margin-left: 1rem;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
