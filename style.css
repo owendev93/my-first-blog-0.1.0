@@ -148,6 +148,7 @@ html{
 }
 
 .logo span:nth-child(1) {
+    font-size: 7rem;
     color: #fff;
 }
 
@@ -162,7 +163,7 @@ html{
     font-size: 5rem; /* Tamaño del icono */
     color: #E67E22; /* Color del icono */
     position: absolute;
-    left: 28rem;
+    left: 31rem;
     top: 3rem; 
     cursor: pointer;
     animation: bounce 1.5s infinite;
@@ -221,7 +222,7 @@ html{
 }
 
 .greeting{
-    font-size: 2.5rem;
+    font-size: 4rem;
     display: flex;
     align-items: center; /* Alinea el texto y el span al mismo nivel */
     gap: 0.5rem; /* Añade un pequeño espacio entre el texto y el efecto */
@@ -235,6 +236,7 @@ html{
     font-weight: bold;
     color: #E67E22;
     font-weight: 2rem;
+    margin-left: 1rem;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -252,7 +254,7 @@ html{
 }
 
 .name{
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     width: 80rem;
     margin: 4rem 0 2rem 0;
     color: #fff;
@@ -264,7 +266,7 @@ html{
 }
 
 .prof{
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 300;
     text-transform: uppercase;
     color: #E67E22;
@@ -274,13 +276,14 @@ html{
 
 .prof span{
     font-family: "Caveat", cursive;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #fff;
     font-weight: bold;
     text-transform: capitalize;
     margin-left: 1.2rem;
 }
 
+/*
 .about{
     width: 60rem;
     font-family: "Caveat", cursive;
@@ -288,15 +291,16 @@ html{
     line-height: 1;
     color: #a9abae;
     margin-bottom: 5rem;
-}
+}*/
 
 .social-media{
+    margin-left: 1rem;
     margin-top: 20rem;
     margin-bottom: 5rem;
 }
 
 .social-media i{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fff;
     margin-right: 2rem;
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
