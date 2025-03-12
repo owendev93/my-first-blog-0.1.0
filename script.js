@@ -69,3 +69,42 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", setActiveNavItem);
     setActiveNavItem(); // Llama a la función al cargar la página para establecer el estado activo inicial
 });
+
+
+//Envio de datos a traves del formulario de contacto
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("DVybbFwDyFF6dX9DV"); // Reemplaza con tu Public Key de EmailJS
+
+    document.querySelector(".contact-btn").addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Capturar los valores del formulario
+        let name = document.querySelector("input[name='name']").value;
+        let email = document.querySelector("input[email='email']").value;
+        let subject = document.querySelector("input[subject='subject']").value;
+        let message = document.querySelector("textarea[message='message']").value;
+
+        // Validar que los campos no estén vacíos
+        if (!name || !email || !subject || !message) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        // Parámetros para enviar el email
+        let params = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message,
+        };
+
+        emailjs.send("service_z5wdh92", "template_cm5n0dn", params)
+            .then(function (response) {
+                alert("¡Mensaje enviado con éxito!");
+                document.querySelector("form").reset();
+            }, function (error) {
+                alert("Error al enviar el mensaje. Inténtalo de nuevo.");
+                console.error("Error:", error);
+            });
+    });
+});
