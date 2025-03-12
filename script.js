@@ -71,18 +71,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
 //Envio de datos a traves del formulario de contacto
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("DVybbFwDyFF6dX9DV"); // Reemplaza con tu Public Key de EmailJS
-
+    emailjs.init("DVybbFwDyFF6dX9DV");
     document.querySelector(".contact-btn").addEventListener("click", function (e) {
         e.preventDefault();
 
         // Capturar los valores del formulario
         let name = document.querySelector("input[name='name']").value;
-        let email = document.querySelector("input[email='email']").value;
-        let subject = document.querySelector("input[subject='subject']").value;
-        let message = document.querySelector("textarea[message='message']").value;
+        let email = document.querySelector("input[name='email']").value;
+        let subject = document.querySelector("input[name='subject']").value;
+        let message = document.querySelector("textarea[name='message']").value;
 
         // Validar que los campos no estén vacíos
         if (!name || !email || !subject || !message) {
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector("form").reset();
             }, function (error) {
                 alert("Error al enviar el mensaje. Inténtalo de nuevo.");
-                console.error("Error:", error);
+                
             });
     });
 });

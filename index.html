@@ -343,19 +343,19 @@
                         <div class="input-groups">
                             <div class="input-group">
                                 <label for="name">Your Full Name <i class="fa-solid fa-asterisk"></i></label>
-                                <input name="name" type="text"> 
+                                <input type="text" name="name" required> 
                             </div>
                             <div class="input-group">
                                 <label for="email">Your Email Address <i class="fa-solid fa-asterisk"></i></label>
-                                <input name="email" type="email"> 
+                                <input type="email" name="email" required> 
                             </div>
                             <div class="input-group">
                                 <label for="subject">Your Subject <i class="fa-solid fa-asterisk"></i></label>
-                                <input name="subject" type="text"> 
+                                <input type="text" name="subject" required> 
                             </div>
                             <div class="input-group">
                                 <label for="message">Your Massage <i class="fa-solid fa-asterisk"></i></label>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" required></textarea>
                             </div>
                             
                         </div>
@@ -399,7 +399,13 @@
         <!-- End of Footer -->
     </div>
     <!-- End Container -->
-    
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("DVybbFwDyFF6dX9DV"); // Reemplaza con tu Public Key de EmailJS
+        })();
+    </script>
 <script src="script.js"></script>
 </body>
 </html>
