@@ -9,24 +9,42 @@
 }
 
 html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* End of Default Styles*/
 
-/*Container*/
+
+/*** Container ***/
 .container {
     width: 100%;
     height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0 2rem; /* Agrega márgenes laterales para evitar que el contenido toque los bordes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(#424949, #515A5A, #515A5A);
 }
 
-/* Navigation */
+
+/** Navigation **/
 .sidebar {
     position: fixed;
     width: 80px;
     height: 85vh;
-    left: 2rem;
+    left: 5rem;
     top: 8rem;
     gap: 0.1rem;
     border-radius: 3rem;
@@ -1144,224 +1162,154 @@ html{
 /* End of Footer */
 /* End of Container*/
 
-/* Responsive */
-@media(max-width: 1700px){
-    html{
+/* ============================ */
+/* === ESTILOS RESPONSIVOS === */
+/* ============================ */
+
+/* Estilos para pantallas grandes (PC) */
+/* Estilos para pantallas grandes (PC) */
+@media (max-width: 1700px) {
+    html {
         font-size: 57%;
     }
-
-    .navigation{
-        right: -70rem;
-    }
-
-    .skills .section-border{
-        left: 10rem;
-    }
-
-    .contact .section-border{
+    .skills .section-border, .contact .section-border {
         left: 10rem;
     }
 }
 
-@media(max-width: 1500px){
-    html{
+@media (max-width: 1500px) {
+    html {
         font-size: 52%;
     }
-
-    .name{
+    .name {
         font-size: 7rem;
         width: 40rem;
     }
-
-    .about{
+    .about {
         width: 45rem;
     }
-
-    .dev-img-wrapper{
+    .dev-img-wrapper {
         width: 40rem;
         height: 40rem;
     }
-
-    .dev-work{
-        width: 20rem;
-        height: 7rem;
-        padding: 0 1rem;
-    }
-
-    .dev-work span:nth-child(1){
-        font-size: 2rem;
-        width: 35%; 
-    }
-
-    .dev-experience{
-        bottom: 22rem;
-        width: 25rem;
-    }
-
-    .dev-projects{
-        bottom: 14rem;
-        right: -4rem;
-    }
-
-    .section-bg-heading{
-        font-size: 23rem;
-    }
-
-    .skills{
-        height: 100%;
-        padding: 10rem 0 20rem 0;
-    }
-
-    .skills-cards{
-        width: 100rem;
-    }
-
-    .skills .section-border{
-        height: 85rem;
-    }
-
-    .projects-cards{
-        width: 100rem;
-    }
-
-    .contact-content{
-        width: 110rem;
-    }
-}
-
-@media(max-width: 1200px){
-    html{
-        font-size: 45%;
-    }
-
-    .projects .section-border{
-        right: 10rem;
-    } 
-
-    .contact-content{
-        width: 100rem;
-        justify-content: space-evenly;
-    }
-
-    .contact-right{
-        margin-right: -15rem;
-    }
-
-    .input-groups{
-        flex-direction: column;
-    }
-
-    .input-groups input{
-        width: 60rem;
-    }
-}
-
-@media(max-width: 900px){
-    html{
-        font-size: 39%;
-    }
-
-    .section-border{
-        display: none;
-    }
-
-    .section-bg-heading{
-        font-size: 20rem;
-    }
-
-    .contact-content{
-        width: 100rem;
-    }
-
-    .contact-right{
-        margin-right: -5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .navigation {
+    .skills-cards {
         width: 100%;
-        right: -100vw;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
+}
 
-    .cv-btn {
-        width: 100%; /* Que ocupe todo el ancho disponible */
-        max-width: 30rem;
+/* Estilos para tablets */
+@media (max-width: 1200px) {
+    html {
+        font-size: 45%;
     }
-
-    .section-border {
-        display: none; /* Oculta la línea divisoria */
+    .projects .section-border {
+        right: 10rem;
     }
-
-    .skills-cards, .projects-cards {
-        grid-template-columns: 1fr; /* Una columna en móviles */
+    .contact-content {
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
-
-    .change .navigation {
-        right: 0;
+    .input-groups {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-group {
+        width: 100%;
+    }
+    .sidebar {
+        display: none; /* Oculta el sidebar en tablets */
+    }
+    .logo {
+        text-align: left;
+        margin-left: 2rem;
     }
 }
 
-@media(max-width: 700px){
-    html{
+/* Estilos para móviles grandes */
+@media (max-width: 900px) {
+    html {
+        font-size: 39%;
+    }
+    .section-border {
+        display: none;
+    }
+    .section-bg-heading {
+        font-size: 20rem;
+    }
+    .developer-img {
+        display: none;
+    }
+    .skills-cards, .projects-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-content {
+        width: 100%;
+        padding: 2rem;
+    }
+    .sidebar {
+        display: none; /* Oculta el sidebar en móviles */
+    }
+    .logo {
+        text-align: center;
+    }
+}
+
+/* Estilos para móviles medianos y pequeños */
+@media (max-width: 700px) {
+    html {
         font-size: 35%;
     }
-
-    .section-bg-heading{
-        font-size: 17rem;
-    }
-
-    .developer-img{
+    .developer-img {
         display: none;
     }
-
-    .skills-cards{
-        width: 60rem;
+    .skills-cards {
+        width: 100%;
     }
-
-    .projects-cards{
-        width: 60rem;
+    .contact-content {
+        width: 100%;
+        padding: 2rem;
     }
-
-    .contact-content{
-        width: 70rem;
-    }
-
-    .contact-left{
+    .icons {
         display: none;
+    }
+    .logo {
+        text-align: center;
     }
 }
 
-@media(max-width: 500px){
-    .navigation{
+@media (max-width: 500px) {
+    .navigation {
         width: 100%;
         right: -100rem;
         justify-content: center;
     }
-
-    .banner{
-        width: 70%;
+    .banner {
+        width: 100%;
     }
-
-    .section-heading{
+    .section-heading {
         text-align: center;
     }
-
-    .skills-cards{
-        width: 55rem;
+    .skills-cards {
+        width: 100%;
     }
-
-    .contact-content{
-        width: 55rem;
+    .contact-content {
+        width: 100%;
+        padding: 2rem;
     }
-
-    .input-groups input{
-        width: 50rem;
+    .input-groups input {
+        width: 100%;
     }
-
-    .icons{
-        display: none;
+    .logo {
+        text-align: center;
     }
-}
-/* End of Responsive */
+} /* Fin de estilos responsivos */
