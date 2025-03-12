@@ -53,7 +53,11 @@ html{
     opacity: 0.7;
     pointer-events: none;
     transform: translate(-50%, -50%); /* Lo centra horizontal y verticalmente */
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.sidebar:hover .sidebar-logo img {
+    transform: translate(-50%, -50%) scale(2); /* Aumenta el tamaño al 120% cuando se hace hover en la sidebar */
 }
 
 .sidebar-nav{
@@ -1101,11 +1105,23 @@ html{
     margin-right: 1rem;
 }
 
+.author {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
 .author span{
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
     font-weight: bold;
     color: #E67E22;
+    
+}
+
+.author img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
 }
 /* End of Footer */
 /* End of Container*/
