@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Owen | Creando Experiencias Digitales</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('DVybbFwDyFF6dX9DV')
+    </script>
     <link rel="icon" type="image/png" sizes="192x192" href="images/logo-title.png">
     <link rel="stylesheet" href="style.css" /> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -339,27 +345,28 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <div class="input-groups">
-                            <div class="input-group">
-                                <label for="name">Your Full Name <i class="fa-solid fa-asterisk"></i></label>
-                                <input type="text" name="name" required> 
-                            </div>
-                            <div class="input-group">
-                                <label for="email">Your Email Address <i class="fa-solid fa-asterisk"></i></label>
-                                <input type="email" name="email" required> 
-                            </div>
-                            <div class="input-group">
-                                <label for="subject">Your Subject <i class="fa-solid fa-asterisk"></i></label>
-                                <input type="text" name="subject" required> 
-                            </div>
-                            <div class="input-group">
-                                <label for="message">Your Massage <i class="fa-solid fa-asterisk"></i></label>
-                                <textarea name="message" required></textarea>
-                            </div>
-                            
+                    <form id="form">
+                        <div class="field">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name">
                         </div>
-                        <button type="button" class="contact-btn">Send Message</button>
+                        <div class="field">
+                            <label for="subject">subject</label>
+                            <input type="text" name="subject" id="subject">
+                        </div>
+                        <div class="field">
+                            <label for="message">message</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+                        <div class="field">
+                            <label for="email_id">email_id</label>
+                            <input type="text" name="email_id" id="email_id">
+                        </div>
+                        <div class="field">
+                            <label for="reply_to">reply_to</label>
+                            <input type="text" name="reply_to" id="reply_to">
+                        </div>
+                        <input type="submit" id="button" value="Send Email" >
                     </form>
                 </div>
             </div>
@@ -400,12 +407,6 @@
     </div>
     <!-- End Container -->
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("DVybbFwDyFF6dX9DV"); // Reemplaza con tu Public Key de EmailJS
-        })();
-    </script>
 <script src="script.js"></script>
 </body>
 </html>

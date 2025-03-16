@@ -74,38 +74,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //Envio de datos a traves del formulario de contacto
-document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("DVybbFwDyFF6dX9DV");
-    document.querySelector(".contact-btn").addEventListener("click", function (e) {
-        e.preventDefault();
+const btn = document.getElementById('button');
 
-        // Capturar los valores del formulario
-        let name = document.querySelector("input[name='name']").value;
-        let email = document.querySelector("input[name='email']").value;
-        let subject = document.querySelector("input[name='subject']").value;
-        let message = document.querySelector("textarea[name='message']").value;
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-        // Validar que los campos no estén vacíos
-        if (!name || !email || !subject || !message) {
-            alert("Por favor, completa todos los campos.");
-            return;
-        }
+    btn.value = 'Sending...';
 
-        // Parámetros para enviar el email
-        let params = {
-            from_name: name,
-            from_email: email,
-            subject: subject,
-            message: message,
-        };
+const serviceID = 'default_service';
+const templateID = 'template_cm5n0dn';
 
-        emailjs.send("service_z5wdh92", "template_cm5n0dn", params)
-            .then(function (response) {
-                alert("¡Mensaje enviado con éxito!");
-                document.querySelector("form").reset();
-            }, function (error) {
-                alert("Error al enviar el mensaje. Inténtalo de nuevo.");
-                
-            });
+emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+    btn.value = 'Send Email';
+    alert('Sent!');
+    }, (err) => {
+    btn.value = 'Send Email';
+    alert(JSON.stringify(err));
     });
 });
