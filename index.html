@@ -346,27 +346,27 @@
                 </div>
                 <div class="contact-right">
                     <form id="form">
-                        <div class="field">
-                            <label for="name">name</label>
-                            <input type="text" name="name" id="name">
+                        <div class="input-groups">
+                            
+                            <div class="field">
+                                <label for="name">Nombre y Apellidos.<i class="fa-solid fa-asterisk"></i></label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email_id">Direccion de Email.<i class="fa-solid fa-asterisk"></i></label>
+                                <input type="text" name="email_id" id="email_id" required>
+                            </div>
+                            <div class="field">
+                                <label for="subject">Asunto.<i class="fa-solid fa-asterisk"></i></label>
+                                <input type="text" name="subject" id="subject" required>
+                            </div>
+                            <div class="field">
+                                <label for="message">Mensaje.<i class="fa-solid fa-asterisk"></i></label>
+                                <input type="text" name="message" id="message" required>
+                            </div>
+                            
+                            <button type="submit" id="button">Enviar Mensaje.</button>
                         </div>
-                        <div class="field">
-                            <label for="subject">subject</label>
-                            <input type="text" name="subject" id="subject">
-                        </div>
-                        <div class="field">
-                            <label for="message">message</label>
-                            <input type="text" name="message" id="message">
-                        </div>
-                        <div class="field">
-                            <label for="email_id">email_id</label>
-                            <input type="text" name="email_id" id="email_id">
-                        </div>
-                        <div class="field">
-                            <label for="reply_to">reply_to</label>
-                            <input type="text" name="reply_to" id="reply_to">
-                        </div>
-                        <input type="submit" id="button" value="Send Email" >
                     </form>
                 </div>
             </div>
