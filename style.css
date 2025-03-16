@@ -1219,17 +1219,57 @@ body {
     html {
         font-size: 45%;
     }
-    .projects .section-border {
-        right: 10rem;
+
+    .dev-img-wrapper {
+        width: 70rem;
+        height: 70rem;
+        margin-left: -10rem;
     }
+
+    .greeting, .name, .prof, .about, .social-media, .cv {
+        width: 50rem;
+        margin-left: 15rem;
+    }
+
+    .dev-work {
+        right: 40rem;
+    }
+    
     .contact-content {
         width: 100%;
         justify-content: space-evenly;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        gap: 2rem;
     }
+
+    .contact-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 30rem;
+        padding-top: 55rem;
+        margin: -15rem 0;
+    }
+
+    .contact-left div {
+        display: flex;
+        align-items: center;
+        margin: -7rem; /* Ajusta el margen según sea necesario */
+    }
+    
+    .contact-left i {
+        margin-right: 12rem; /* Ajusta el margen derecho del icono */
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente el contenido */
+    }
+
     .input-groups {
         flex-direction: column;
         width: 100%;
