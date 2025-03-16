@@ -1219,22 +1219,18 @@ body {
     html {
         font-size: 45%;
     }
-
     .dev-img-wrapper {
         width: 70rem;
         height: 70rem;
         margin-left: -10rem;
     }
-
     .greeting, .name, .prof, .about, .social-media, .cv {
         width: 50rem;
         margin-left: 15rem;
     }
-
     .dev-work {
         right: 40rem;
     }
-    
     .contact-content {
         width: 100%;
         justify-content: space-evenly;
@@ -1243,7 +1239,6 @@ body {
         align-items: center;
         gap: 2rem;
     }
-
     .contact-left {
         display: flex;
         flex-direction: row;
@@ -1253,7 +1248,6 @@ body {
         padding-top: 55rem;
         margin: -15rem 0;
     }
-
     .contact-left div {
         display: flex;
         align-items: center;
@@ -1263,7 +1257,6 @@ body {
     .contact-left i {
         margin-right: 12rem; /* Ajusta el margen derecho del icono */
     }
-    
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -1297,20 +1290,41 @@ body {
     html {
         font-size: 39%;
     }
-    .section-border {
-        display: none;
+    .developer-info {
+        width: 50rem;
+        margin-right: 40rem;
+        margin-top: 0;
+    }
+    .dev-img {
+        width: 30rem;
+        height: 30rem;   
+    }
+    .dev-img-wrapper {
+        width: 60rem;
+        height: 60rem;
+        margin-left: -22em;
     }
     .section-bg-heading {
         font-size: 20rem;
-    }
-    .developer-img {
-        display: none;
+        margin-bottom: 20rem;
     }
     .skills-cards, .projects-cards {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .skills .section-bg-heading {
+        margin-bottom: 12rem;
+    }
+    .projects .section-bg-heading {
+        margin-bottom: 7rem;
+    }
+    .contact .section-bg-heading {
+        margin-bottom: 9rem;
+    }
+    .projects .btn {
+        margin: 5rem 0 0 0;
     }
     .contact-content {
         width: 100%;
@@ -1329,8 +1343,12 @@ body {
         width: 100%;
         position: relative;
     }
-    .icons {
-        display: none !important; /* Oculta los iconos de redes en el footer */
+    .footer {
+        margin: 0 1rem;
+        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+    }
+    .copyright, .author, .icons {
+        margin: 0 6rem; /* Ajusta el margen entre los contenedores */
     }
 }
 
@@ -1339,8 +1357,27 @@ body {
     html {
         font-size: 35%;
     }
-    .developer-img {
-        display: none;
+    .developer-info {
+        width: 45rem;
+        margin-right: 50rem;
+        margin-bottom: 20rem;
+    }
+    .dev-img {
+        width: 30rem;
+        height: 30rem;   
+    }
+    .dev-img-wrapper {
+        width: 55rem;
+        height: 55rem;
+        margin-left: -35rem;
+    }
+    .dev-work {
+        right: 20rem;
+        margin-bottom: 10rem;
+    }
+    .section-bg-heading {
+        font-size: 20rem;
+        margin-bottom: 30rem;
     }
     .skills-cards, .projects-cards, .contact-content {
         width: 100%;
@@ -1349,16 +1386,61 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .skills .section-heading {
+        margin-top: -6rem;
+        margin-bottom: 1rem;
+    }
+    .skills-card {
+        width: 40%;
+        margin: 1rem 0;
+        margin-top: -2rem;
+    }
+    .skills-card-progress::before {
+        right: 2rem;
+        width: 31.5rem;
+    }
+    .skills-card-progress::after {
+        right: -65.1rem;
+        width: 5rem;
+    }
+    .skills-card-progress {
+        margin-bottom: 3.5rem;
+    }
     .projects-cards {
         justify-content: center; /* Centra los proyectos */
         align-items: center; /* Centra los proyectos */
     }
     .project-card {
-        width: 100%; /* Asegura que los proyectos ocupen todo el ancho disponible */
+        width: 45%; /* Asegura que los proyectos ocupen todo el ancho disponible */
         margin: 1rem 0; /* Añade margen inferior para separar los proyectos */
     }
-    .icons {
-        display: none !important; /* Oculta los iconos de redes en dispositivos pequeños */
+    .project-img {
+        width: 100%;
+        height: auto;
+        display: flex; /* Añade flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    .project-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .projects .section-bg-heading{
+        margin-bottom: -7rem;
+    }
+    .projects .btn{
+        margin-bottom: -7rem;
+    }
+    .contact{
+        height: 70vh;
+    }
+    .footer {
+        margin: 0 1rem;
+        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+    }
+    .copyright, .author, .icons {
+        margin: 0 4rem; /* Ajusta el margen entre los contenedores */
     }
     .logo {
         text-align: center;
@@ -1368,6 +1450,9 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+    .contact-left{
+        margin-top: -20rem;
     }
     .input-groups {
         display: flex;
@@ -1381,13 +1466,29 @@ body {
 }
 
 @media (max-width: 500px) {
-    .navigation {
-        width: 100%;
-        right: -100rem;
-        justify-content: center;
-    }
+
     .banner {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing .section-bg-heading{
+        margin-bottom: 5rem;
+        font-size: 20rem;
+        letter-spacing: 0.2rem;
+    }
+    .cv span{
+        display: none !important;
+    }
+    .developer-img{
+        width: 50%;
+        margin-top: -48rem;
+        left: 30rem;
+    }
+    .dev-work{
+        right: 20rem;
+        margin-bottom: 2rem;
     }
     .section-heading {
         text-align: center;
@@ -1399,12 +1500,17 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .skills-card {
+        width: 50%;
+        margin: 1rem 0;
+        margin-top: -2rem;
+    }
     .projects-cards {
         justify-content: center; /* Centra los proyectos */
         align-items: center; /* Centra los proyectos */
     }
     .project-card {
-        width: 100%; /* Asegura que los proyectos ocupen todo el ancho disponible */
+        width: 50%; /* Asegura que los proyectos ocupen todo el ancho disponible */
         margin: 1rem 0; /* Añade margen inferior para separar los proyectos */
     }
     .input-groups input {
@@ -1418,6 +1524,24 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+    .contact .section-bg-heading{
+        margin-bottom: 1rem;
+    }
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem; /* Espaciado entre los elementos internos */
+        margin-top: -15rem; 
+        margin-bottom: -15rem;
+        width: 100%;
+    }
+    .footer {
+        margin: 0 1rem;
+        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+    }
+    .copyright, .author, .icons {
+        margin: 0 4rem; /* Ajusta el margen entre los contenedores */
     }
     .icons {
         display: none !important; /* Oculta los iconos de redes en móviles */
