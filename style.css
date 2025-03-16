@@ -1167,7 +1167,7 @@ body {
 /* Estilos para pantallas grandes (PC) */
 @media (max-width: 1700px) {
     html {
-        font-size: 57%;
+        font-size: 50%;
     }
     .skills .section-border, .contact .section-border {
         left: 10rem;
@@ -1176,24 +1176,41 @@ body {
 
 @media (max-width: 1500px) {
     html {
-        font-size: 52%;
+        font-size: 50%;
     }
     .name {
-        font-size: 7rem;
-        width: 40rem;
+        font-size: 5rem;
+        margin-left: 5rem;
     }
-    .about {
-        width: 45rem;
+    .greeting, .name, .prof, .about, .social-media, .cv {
+        width: 50rem;
+        margin-left: 35rem;
     }
+
+    .prof, .prof span {
+        font-size: 3rem;
+    }
+
     .dev-img-wrapper {
-        width: 40rem;
-        height: 40rem;
+        width: 80rem;
+        height: 80rem;
+        margin-left: 5rem;
     }
     .skills-cards {
-        width: 100%;
+        width: 90%;
+        gap: 0.1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .footer {
+        margin: 0 1rem;
+        padding: 1rem 0; /* Ajusta el padding superior e inferior */
+    }
+
+    .copyright, .author, .icons {
+        margin: 0 10rem; /* Ajusta el margen entre los contenedores */
     }
 }
 
