@@ -1164,7 +1164,7 @@ body {
     html {
         font-size: 50%;
     }
-    .skills .section-border, .contact .section-border {
+    .skills, .contact{
         left: 10rem;
     }
 }
