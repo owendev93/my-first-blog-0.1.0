@@ -194,11 +194,6 @@ body {
     color: #E67E22;
 }
 
-/* Animación de rebote */
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
 
 .banner {
     position: absolute;
@@ -266,12 +261,12 @@ body {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
-    animation: typing 7s steps(10) infinite alternate, blink 0.5s step-end infinite;
+    animation: typing 5s steps(10) infinite alternate, blink 0.5s step-end infinite;
 }
 
 @keyframes typing{
     0% { width: 0; }
-    50% { width: 12ch; } /* Se escribe completamente */
+    50% { width: 15ch; } /* Se escribe completamente */
     100% { width: 0; } /* Se borra y vuelve a empezar */
 }
 
