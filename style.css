@@ -1461,7 +1461,10 @@ body {
 }
 
 @media (max-width: 500px) {
-
+    .logo{
+        width: 100%;
+        margin-left: -40rem;
+    }
     .banner {
         width: 100%;
         display: flex;
@@ -1472,6 +1475,9 @@ body {
         margin-bottom: 5rem;
         font-size: 20rem;
         letter-spacing: 0.2rem;
+    }
+    .section-bg-heading{
+        display: none !important;
     }
     .cv span{
         display: none !important;
@@ -1500,7 +1506,14 @@ body {
         margin: 1rem 0;
         margin-top: -2rem;
     }
+    .skills{
+        height: 85vh;
+    }
+    .skills-card-progress{
+        display: none !important;
+    }
     .projects-cards {
+        margin-left: 1rem;
         justify-content: center; /* Centra los proyectos */
         align-items: center; /* Centra los proyectos */
     }
@@ -1514,41 +1527,51 @@ body {
     .logo {
         text-align: center;
     }
+    .education{
+        height: 70vh;
+    }
     .education, .skills {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+    .education-card i{
+        display: none !important;
+    }
     .contact .section-bg-heading{
         margin-bottom: 1rem;
     }
+    .contact {
+        margin-bottom: 1rem;
+    }
     .contact-left {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: -15rem; 
-        margin-bottom: -15rem;
-        width: 100%;
+        margin-right: 10rem;
+        margin-top: -15rem;
     }
     .footer {
+        display: flex;
+        flex-direction: column;
         margin: 0 1rem;
-        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+        padding: 8rem 6rem; /* Ajusta el padding superior e inferior */
+    }
+    .icons{
+        display: flex !important; /* Asegura que los íconos sean visibles */
+        justify-content: center;
+        align-items: center;
     }
     .copyright, .author, .icons {
         margin: 0 4rem; /* Ajusta el margen entre los contenedores */
     }
-    .icons {
-        display: none !important; /* Oculta los iconos de redes en móviles */
-    }
 } 
 
 @media (max-width: 400px) {
-    .education{
-        height: 70vh;
-    }
     .logo{
-        left: 5rem;
+        left: 30rem;
     }
     .banner {
         width: 100%;
@@ -1574,6 +1597,9 @@ body {
     .section-heading {
         text-align: center;
     }
+    .education{
+        height: 80vh;
+    }
     .education-card i{
         width: 7rem;
         height: 7rem;
@@ -1594,10 +1620,125 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .skills{
+        height: 110vh;
+    }
     .skills-card {
         width: 65%;
         margin: 1rem 0;
         margin-top: -2rem;
+    }
+    .projects-cards {
+        justify-content: center; /* Centra los proyectos */
+        align-items: center; /* Centra los proyectos */
+    }
+    .project-card {
+        width: 50%; /* Asegura que los proyectos ocupen todo el ancho disponible */
+        margin: 1rem 0; /* Añade margen inferior para separar los proyectos */
+        margin-right: 10rem;
+    }
+    .projects-cards .btn{
+        margin-right: 10rem;
+    }
+    .input-groups input {
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    .education, .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contact {
+        height: 85vh;
+        margin-bottom: 1rem;
+    }
+    .contact-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20rem; /* Espaciado entre los elementos internos */
+        margin-top: -10rem; 
+        margin-bottom: -15rem;
+        margin-right: 10rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+        padding: 8rem 6rem; /* Ajusta el padding superior e inferior */
+    }
+    .icons{
+        display: flex !important; /* Asegura que los íconos sean visibles */
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright, .author, .icons {
+        margin: 0 4rem; /* Ajusta el margen entre los contenedores */
+    }
+    
+}
+
+@media (max-width: 300px) {
+    .logo{
+        left: 5rem;
+    }
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 10rem;
+    }
+    .section-bg-heading{
+        display: none !important;
+    }
+    .cv span{
+        display: none !important;
+    }
+    .developer-img{
+        display: none !important;
+    }
+    .dev-work{
+        display: none !important;
+    }
+    .section-heading {
+        text-align: center;
+        font-size: 6rem;
+    }
+    .education{
+        height: 70vh;
+    }
+    .education-card i{
+        display: none !important;
+    }
+    .education-info div:nth-child(1){
+        font-size: 2.5rem;
+    }
+    .education-info div:nth-child(2),.education-info div:nth-child(3),.education-info div:nth-child(4){
+        font-size: 2.2rem;
+    }
+    .skills{
+        height: 85vh;
+    }
+    .skills-cards, .projects-cards, .contact-content {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-card {
+        width: 65%;
+        margin: 1rem 0;
+        margin-top: -2rem;
+    }
+    .skills-card-progress{
+        display: none !important;
     }
     .projects-cards {
         justify-content: center; /* Centra los proyectos */
@@ -1631,9 +1772,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: -15rem; 
-        margin-bottom: -15rem;
-        margin-right: 10rem;
+        margin-right: 15rem;
     }
     .footer {
         display: flex;
