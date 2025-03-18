@@ -1546,4 +1546,87 @@ body {
     .icons {
         display: none !important; /* Oculta los iconos de redes en móviles */
     }
-} /* Fin de estilos responsivos */
+} 
+
+@media (max-width: 400px) {
+
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing .section-bg-heading{
+        margin-bottom: 5rem;
+        font-size: 20rem;
+        letter-spacing: 0.2rem;
+    }
+    .cv span{
+        display: none !important;
+    }
+    .developer-img{
+        width: 50%;
+        margin-top: -48rem;
+        left: 30rem;
+    }
+    .dev-work{
+        right: 20rem;
+        margin-bottom: 2rem;
+    }
+    .section-heading {
+        text-align: center;
+    }
+    .skills-cards, .projects-cards, .contact-content {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-card {
+        width: 50%;
+        margin: 1rem 0;
+        margin-top: -2rem;
+    }
+    .projects-cards {
+        justify-content: center; /* Centra los proyectos */
+        align-items: center; /* Centra los proyectos */
+    }
+    .project-card {
+        width: 50%; /* Asegura que los proyectos ocupen todo el ancho disponible */
+        margin: 1rem 0; /* Añade margen inferior para separar los proyectos */
+    }
+    .input-groups input {
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    .education, .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contact .section-bg-heading{
+        margin-bottom: 1rem;
+    }
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem; /* Espaciado entre los elementos internos */
+        margin-top: -15rem; 
+        margin-bottom: -15rem;
+        width: 100%;
+    }
+    .footer {
+        margin: 0 1rem;
+        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+    }
+    .copyright, .author, .icons {
+        margin: 0 4rem; /* Ajusta el margen entre los contenedores */
+    }
+    .icons {
+        display: none !important; /* Oculta los iconos de redes en móviles */
+    }
+/* Fin de estilos responsivos */
