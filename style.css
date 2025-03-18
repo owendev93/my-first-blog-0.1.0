@@ -1544,32 +1544,48 @@ body {
 } 
 
 @media (max-width: 400px) {
-
+    .education{
+        height: 70vh;
+    }
+    .logo{
+        left: 5rem;
+    }
     .banner {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10rem;
     }
-    .landing .section-bg-heading{
-        margin-bottom: 5rem;
-        font-size: 20rem;
-        letter-spacing: 0.2rem;
+    .section-bg-heading{
+        display: none !important;
     }
     .cv span{
         display: none !important;
     }
     .developer-img{
-        width: 50%;
-        margin-top: -48rem;
-        left: 30rem;
+        width: 20%;
+        left: 25rem;
     }
     .dev-work{
         right: 20rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
     .section-heading {
         text-align: center;
+    }
+    .education-card i{
+        width: 7rem;
+        height: 7rem;
+        font-size: 3rem;
+        margin-left: 8rem;
+        margin-right: 2rem;
+    }
+    .education-info div:nth-child(1){
+        font-size: 2.5rem;
+    }
+    .education-info div:nth-child(2),.education-info div:nth-child(3),.education-info div:nth-child(4){
+        font-size: 2.2rem;
     }
     .skills-cards, .projects-cards, .contact-content {
         width: 100%;
@@ -1579,7 +1595,7 @@ body {
         align-items: center;
     }
     .skills-card {
-        width: 50%;
+        width: 65%;
         margin: 1rem 0;
         margin-top: -2rem;
     }
@@ -1590,6 +1606,10 @@ body {
     .project-card {
         width: 50%; /* Asegura que los proyectos ocupen todo el ancho disponible */
         margin: 1rem 0; /* Añade margen inferior para separar los proyectos */
+        margin-right: 10rem;
+    }
+    .projects-cards .btn{
+        margin-right: 10rem;
     }
     .input-groups input {
         width: 100%;
@@ -1603,25 +1623,32 @@ body {
         align-items: center;
         width: 100%;
     }
-    .contact .section-bg-heading{
+    .contact {
         margin-bottom: 1rem;
     }
     .contact-left {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: -15rem; 
         margin-bottom: -15rem;
-        width: 100%;
+        margin-right: 10rem;
     }
     .footer {
+        display: flex;
+        flex-direction: column;
         margin: 0 1rem;
-        padding: 5rem 0; /* Ajusta el padding superior e inferior */
+        padding: 8rem 6rem; /* Ajusta el padding superior e inferior */
+    }
+    .icons{
+        display: flex !important; /* Asegura que los íconos sean visibles */
+        justify-content: center;
+        align-items: center;
     }
     .copyright, .author, .icons {
         margin: 0 4rem; /* Ajusta el margen entre los contenedores */
     }
-    .icons {
-        display: none !important; /* Oculta los iconos de redes en móviles */
-    }
+    
+}
 /* Fin de estilos responsivos */
