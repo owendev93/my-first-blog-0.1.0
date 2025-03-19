@@ -1594,8 +1594,8 @@ body {
         right: 20rem;
         margin-bottom: 4rem;
     }
-    .section-heading {
-        text-align: center;
+    .education .section-heading {
+        font-size: 7rem;
     }
     .education{
         height: 80vh;
@@ -1621,12 +1621,18 @@ body {
         align-items: center;
     }
     .skills{
-        height: 110vh;
+        height: 100vh;
+    }
+    .skills .section-heading {
+        font-size: 7rem;
+        margin-right: 20rem;
+    }
+    .skills .sub-heading{
+        margin-right: 20rem;
     }
     .skills-card {
-        width: 65%;
-        margin: 1rem 0;
-        margin-top: -2rem;
+        width: 60%;
+        margin-right: 20rem;
     }
     .projects-cards {
         justify-content: center; /* Centra los proyectos */
@@ -1653,17 +1659,35 @@ body {
         width: 100%;
     }
     .contact {
-        height: 85vh;
+        height: 50vh;
         margin-bottom: 1rem;
+    }
+    .contact .section-heading {
+        font-size: 7rem;
+        margin-right: 20rem;
+    }
+    .contact .sub-heading{
+        font-size: 2rem;
+        margin-right: 20rem;
     }
     .contact-left {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
+        margin-top: -15rem; 
+        margin-bottom: 5rem;
+        margin-right: 35em;
+    }
+    .contact-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: -10rem; 
-        margin-bottom: -15rem;
-        margin-right: 10rem;
+        margin-bottom: 5rem;
+        margin-right: 20rem;
+    }
     }
     .footer {
         display: flex;
