@@ -1630,9 +1630,10 @@ body {
     .skills .sub-heading{
         margin-right: 20rem;
     }
-    .skills-card {
-        width: 60%;
+    .skills .skills-card {
+        width: 75%;
         margin-right: 20rem;
+        margin-bottom: 5rem;
     }
     .projects-cards {
         justify-content: center; /* Centra los proyectos */
