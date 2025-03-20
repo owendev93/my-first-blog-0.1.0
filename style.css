@@ -1675,8 +1675,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: 5rem; 
-        margin-buttom: 6rem;
+        margin-top: 1em; 
         margin-right: 35em;
     }
     .contact-right{
@@ -1685,7 +1684,6 @@ body {
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: 15rem; 
-        margin-buttom: 18rem;
         margin-right: 20rem;
     }
     .footer {
