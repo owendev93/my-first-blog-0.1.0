@@ -1693,7 +1693,7 @@ body {
         display: flex;
         flex-direction: column;
         margin: 0 1rem;
-        padding: 8rem 6rem; /* Ajusta el padding superior e inferior */
+        padding: 5rem 8rem; /* Ajusta el padding superior e inferior */
     }
     .icons{
         display: flex !important; /* Asegura que los íconos sean visibles */
