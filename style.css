@@ -1676,7 +1676,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: 1rem; 
+        margin-top: 10rem; 
         margin-bottom: 10rem;
         margin-right: 35em;
     }
