@@ -1686,14 +1686,14 @@ body {
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: -10rem; 
-        margin-bottom: 18rem;
+        margin-buttom: 18rem;
         margin-right: 20rem;
     }
     .footer {
         display: flex;
         flex-direction: column;
         margin: 0 1rem;
-        padding: 5rem 8rem; /* Ajusta el padding superior e inferior */
+        padding: 8rem 6rem; /* Ajusta el padding superior e inferior */
     }
     .icons{
         display: flex !important; /* Asegura que los íconos sean visibles */
