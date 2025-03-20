@@ -1676,7 +1676,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: 10rem; 
+        margin-top: 15rem; 
         margin-bottom: 10rem;
         margin-right: 35em;
     }
@@ -1686,7 +1686,7 @@ body {
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: -10rem; 
-        margin-bottom: 12rem;
+        margin-bottom: 18rem;
         margin-right: 20rem;
     }
     .footer {
