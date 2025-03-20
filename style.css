@@ -1669,7 +1669,7 @@ body {
     .contact .sub-heading{
         font-size: 2rem;
         margin-right: 20rem;
-        margin-buttom: 10rem;
+        margin-buttom: 5rem;
     }
     .contact-left {
         width: 100%;
@@ -1677,7 +1677,7 @@ body {
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
         margin-top: 15rem; 
-        margin-buttom: 10rem;
+        margin-buttom: 5rem;
         margin-right: 35em;
     }
     .contact-right{
