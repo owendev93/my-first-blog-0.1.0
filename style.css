@@ -1675,8 +1675,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20rem; /* Espaciado entre los elementos internos */
-        margin-top: 5rem; 
-        margin-buttom: 10rem;
+        margin-top: 9rem; 
+        margin-buttom: 8rem;
         margin-right: 35em;
     }
     .contact-right{
