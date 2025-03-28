@@ -199,6 +199,21 @@ body {
     justify-content: flex-end;
     width: 100%;
     padding: 2rem 2rem; /* Agrega márgenes laterales para evitar que el contenido toque los bordes */
+    gap: 0.5rem;
+}
+
+.lang-button{
+    background-color:transparent;
+    font-size: 2rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.lang-button img {
+    width: 2rem; /* Ajusta el tamaño deseado */
+    height: 2rem; /* Asegura que todas las imágenes tengan la misma altura */
+    object-fit: cover; /* Ajusta cómo se recorta la imagen si no tiene proporciones iguales */
+    border-radius: 50%; /* Opcional: hace que las imágenes sean circulares */
 }
 
 .banner {

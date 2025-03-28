@@ -1,0 +1,92 @@
+{
+    "es": {
+    "navigation": {
+        "home": "Inicio",
+        "education": "Educación",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "landing": {
+        "title": "Desarrollador Web",
+        "web": "Web",
+        "dev": "Dev...",
+        "greeting": "Hola, mi nombre es:",
+        "name": "Owen Puerta Sauto.",
+        "profession": "Soy Desarrollador Web | Ingeniero Informático.",
+        "about": "Construyendo el futuro, una línea de código a la vez. Código limpio, diseño eficiente y resultados impactantes.",
+        "download_cv": "Descargar CV",
+        "experience": "Años de Experiencia."
+    },
+    "education": {
+        "title": "Mi Educación.",
+        "heading": "Educación Profesional.",
+        "subheading": "Mi Educación.",
+        "universities": [
+        {
+            "name": "Universidad 'Carlos Rafael Rodríguez'",
+            "degree": "Ingeniero en Informática",
+            "location": "Cienfuegos, Cuba",
+            "dates": "Septiembre 2012 - Mayo 2017"
+        },
+        {
+            "name": "Instituto CPE",
+            "degree": "Posgrado: SQL Analytics",
+            "location": "Montevideo, Uruguay",
+            "dates": "Octubre - Noviembre 2024"
+        }
+        ]
+    },
+    "skills": {
+        "title": "Mis Habilidades",
+        "heading": "Habilidades Profesionales.",
+        "subheading": "Mis Habilidades.",
+        "list": [
+        {
+            "name": "Python",
+            "level": "85%",
+            "description": "Manejo avanzado para el desarrollo backend y software de escritorio. Experiencia en librerías como Django, Flask, Tkinter y SQLite."
+        },
+        {
+            "name": "HTML",
+            "level": "90%",
+            "description": "Creación de estructuras semánticas y accesibles con un enfoque en SEO y usabilidad."
+        },
+        {
+            "name": "CSS",
+            "level": "85%",
+            "description": "Diseño de interfaces atractivas y responsivas utilizando Tailwind CSS y CSS Grid/Flexbox."
+        },
+        {
+            "name": "JavaScript",
+            "level": "80%",
+            "description": "Desarrollo frontend y backend con código limpio y modular. Dominio de ES6+ y optimización del rendimiento."
+        },
+        {
+            "name": "React.JS",
+            "level": "70%",
+            "description": "Creación de aplicaciones interactivas y escalables con React y Hooks."
+        },
+        {
+            "name": "Node.JS",
+            "level": "70%",
+            "description": "Desarrollo backend con Express.js, manejo eficiente de bases de datos con MongoDB y MySQL."
+        }
+        ]
+    },
+    "contact": {
+        "title": "Contáctame.",
+        "heading": "Contacto.",
+        "subheading": "Vamos hablemos un poco.",
+        "address": "Montevideo, Uruguay",
+        "freelance": "Disponible ahora mismo.",
+        "email": "owendev93@gmail.com",
+        "form": {
+          "name": "Nombre y Apellidos.",
+          "email": "Dirección de Email.",
+          "subject": "Asunto.",
+          "message": "Mensaje.",
+          "send": "Enviar Mensaje."
+        }
+    }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "en": {
+    "nav": {
+      "home": "Home",
+      "education": "Education",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "landing": {
+      "title": "Web Developer",
+      "greeting": "Hello, my name is:",
+      "name": "Owen Puerta Sauto.",
+      "profession": "I am a Web Developer | Software Engineer.",
+      "about": "Building the future, one line of code at a time. Clean code, efficient design, and impactful results.",
+      "experience": "Years of Experience.",
+      "download_cv": "Download CV"
+    },
+    "education": {
+      "title": "My Education.",
+      "heading": "Professional Education.",
+      "subheading": "My Education.",
+      "institutions": [
+        {
+          "name": "Carlos Rafael Rodríguez University",
+          "degree": "Software Engineer",
+          "location": "Cienfuegos, Cuba",
+          "dates": "September 2012 - May 2017"
+        },
+        {
+          "name": "CPE Institute",
+          "degree": "Postgraduate: SQL Analytics",
+          "location": "Montevideo, Uruguay",
+          "dates": "October - November 2024"
+        }
+      ]
+    },
+    "skills": {
+      "title": "My Skills",
+      "heading": "Professional Skills.",
+      "subheading": "My Skills.",
+      "list": [
+        {
+          "name": "Python",
+          "level": "85%",
+          "description": "Advanced proficiency in backend development and desktop software..."
+        },
+        {
+          "name": "HTML",
+          "level": "90%",
+          "description": "Creating semantic and accessible structures with a focus on SEO..."
+        },
+        {
+          "name": "CSS",
+          "level": "85%",
+          "description": "Designing attractive and responsive interfaces using Tailwind CSS..."
+        },
+        {
+          "name": "JavaScript",
+          "level": "80%",
+          "description": "Frontend and backend development with clean and modular code..."
+        },
+        {
+          "name": "React.JS",
+          "level": "70%",
+          "description": "Creating interactive and scalable applications with React..."
+        },
+        {
+          "name": "Node.JS",
+          "level": "70%",
+          "description": "Backend development with Express.js, efficient database management..."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Me.",
+      "heading": "Contact.",
+      "subheading": "Let's talk a little.",
+      "address": "Montevideo, Uruguay",
+      "freelance": "Available right now.",
+      "email": "owendev93@gmail.com",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message."
+      }
+    }
+  }
+}
