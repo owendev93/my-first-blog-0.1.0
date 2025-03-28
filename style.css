@@ -194,6 +194,12 @@ body {
     color: #E67E22;
 }
 
+.languages{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2rem 2rem; /* Agrega márgenes laterales para evitar que el contenido toque los bordes */
+}
 
 .banner {
     position: absolute;
