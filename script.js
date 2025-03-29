@@ -95,3 +95,44 @@ emailjs.sendForm(serviceID, templateID, this)
     alert(JSON.stringify(err));
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let currentLang = localStorage.getItem("languages") || "es";
+
+    // Cargar idioma al iniciar
+    loadLanguage(currentLang);
+
+    // Evento para cambiar idioma
+    document.querySelectorAll(".lang-button").forEach((button, index) => {
+        button.addEventListener("click", () => {
+            currentLang = index === 0 ? "es" : "en"; // Primer botón ES, segundo EN
+            localStorage.setItem("languages", currentLang);
+            loadLanguage(currentLang);
+        });
+    });
+
+    function loadLanguage(lang) {
+        const filePath = `languages/${lang}.json`; // Ruta del archivo JSON según el idioma
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`No se pudo cargar el archivo JSON para el idioma: ${lang}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                updateTextContent(data);
+            })
+            .catch(error => console.error("Error cargando el JSON:", error));
+    }
+
+    function updateTextContent(translations) {
+        document.querySelectorAll("[data-lang]").forEach(element => {
+            let key = element.dataset.lang.split(".");
+            let text = key.reduce((obj, k) => obj && obj[k], translations);
+            if (text) element.textContent = text;
+        });
+    }
+});
