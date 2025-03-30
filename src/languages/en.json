@@ -1,5 +1,4 @@
 {
-    
     "sidebar": {
       "home": "Home",
       "education": "Education",
@@ -7,7 +6,7 @@
       "contact": "Contact"
     },
     "landing": {
-      "title": "Web Developer",
+      "bg-heading": "Web Developer",
       "greeting": "Hello, my name is:",
       "name": "Owen Puerta Sauto.",
       "profession": "I am a Web Developer | Software Engineer.",

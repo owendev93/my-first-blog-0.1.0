@@ -97,6 +97,9 @@ emailjs.sendForm(serviceID, templateID, this)
 });
 
 
+
+// Cambiar el idioma de la página
+/*
 const langButton = document.querySelectorAll("[data-language]");
 const textsToChange = document.querySelectorAll("[data-section]");
 
@@ -111,10 +114,13 @@ langButton.forEach((button) => {
 
                 // Usar textContent en lugar de innerHTML para evitar perder estilos
                 if (data[section] && data[section][value]) {
-                    el.innerHTML = data[section][value]; // Usa innerHTML si hay etiquetas
+                    const span = el.querySelector("span"); // Selecciona un elemento interno
+                    if (span) {
+                        span.textContent = data[section][value]; // Actualiza solo el texto del span
+                    }
                 }
             });
         })
-        .catch(error => console.error("Error al cargar el archivo JSON:", error));
+        console.log("Elementos encontrados:", textsToChange);
     });
-});
+});*/

@@ -6,9 +6,7 @@
         "contact": "Contacto"
     },
     "landing": {
-        "title": "Desarrollador Web",
-        "web": "Web",
-        "dev": "Dev...",
+        "section-bg-heading": "Desarrollador Web",
         "greeting": "Hola, mi nombre es:",
         "name": "Owen Puerta Sauto.",
         "profession": "Soy Desarrollador Web | Ingeniero Informático.",
