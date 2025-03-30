@@ -97,42 +97,24 @@ emailjs.sendForm(serviceID, templateID, this)
 });
 
 
+const langButton = document.querySelectorAll("[data-language]");
+const textsToChange = document.querySelectorAll("[data-section]");
 
-document.addEventListener("DOMContentLoaded", () => {
-    let currentLang = localStorage.getItem("languages") || "es";
+langButton.forEach((button) => {
+    button.addEventListener("click", () => {
+        fetch(`src/languages/${button.dataset.language}.json`)
+        .then(res => res.json())
+        .then(data => {
+            textsToChange.forEach((el) => {
+                const section = el.dataset.section;
+                const value = el.dataset.value;
 
-    // Cargar idioma al iniciar
-    loadLanguage(currentLang);
-
-    // Evento para cambiar idioma
-    document.querySelectorAll(".lang-button").forEach((button, index) => {
-        button.addEventListener("click", () => {
-            currentLang = index === 0 ? "es" : "en"; // Primer botón ES, segundo EN
-            localStorage.setItem("languages", currentLang);
-            loadLanguage(currentLang);
-        });
-    });
-
-    function loadLanguage(lang) {
-        const filePath = `languages/${lang}.json`; // Ruta del archivo JSON según el idioma
-        fetch(filePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`No se pudo cargar el archivo JSON para el idioma: ${lang}`);
+                // Usar textContent en lugar de innerHTML para evitar perder estilos
+                if (data[section] && data[section][value]) {
+                    el.textContent = data[section][value];
                 }
-                return response.json();
-            })
-            .then(data => {
-                updateTextContent(data);
-            })
-            .catch(error => console.error("Error cargando el JSON:", error));
-    }
-
-    function updateTextContent(translations) {
-        document.querySelectorAll("[data-lang]").forEach(element => {
-            let key = element.dataset.lang.split(".");
-            let text = key.reduce((obj, k) => obj && obj[k], translations);
-            if (text) element.textContent = text;
-        });
-    }
+            });
+        })
+        .catch(error => console.error("Error al cargar el archivo JSON:", error));
+    });
 });

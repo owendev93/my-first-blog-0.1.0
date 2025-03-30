@@ -1,10 +1,9 @@
 {
-    "en": {
-    "nav": {
+    
+    "sidebar": {
       "home": "Home",
       "education": "Education",
       "skills": "Skills",
-      "portfolio": "Portfolio",
       "contact": "Contact"
     },
     "landing": {
@@ -88,4 +87,3 @@
       }
     }
   }
-}
