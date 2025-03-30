@@ -111,7 +111,7 @@ langButton.forEach((button) => {
 
                 // Usar textContent en lugar de innerHTML para evitar perder estilos
                 if (data[section] && data[section][value]) {
-                    el.textContent = data[section][value];
+                    el.innerHTML = data[section][value]; // Usa innerHTML si hay etiquetas
                 }
             });
         })
