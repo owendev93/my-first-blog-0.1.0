@@ -414,6 +414,59 @@ body {
     margin-top: -15rem; 
 }
 
+/*Developer-Img Ring*/
+
+    .rings {
+        position: absolute; /* Posiciona el elemento de forma absoluta */
+        top: 50%; /* Centra verticalmente */
+        right: 0; /* Pega al borde derecho */
+        transform: translateY(-50%); /* Ajusta para centrar completamente */
+        width: 400px; /* Ajusta el ancho según sea necesario */
+        height: 400px; /* Ajusta la altura según sea necesario */
+        margin-right: 25rem; /* Espacio entre el borde derecho y el elemento */
+    }
+
+
+.rings i{
+    position: absolute;
+    inset: 0;
+    border: 1px solid #f38116;
+    transition: 0.5s;
+}
+
+.rings i:nth-child(1){
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.rings i:nth-child(2){
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+
+.rings i:nth-child(3){
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate 10s linear infinite;
+}
+
+.rings:hover i{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(180deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+/*End of Developer-Img Ring*/
+
 .dev-img-wrapper {
     width: 80rem;
     height: 70rem;
@@ -455,10 +508,11 @@ body {
     right: 50rem;
 }
 
+/*
 .dev-projects{
     bottom: 1rem;
     right: -2rem;
-}
+}*/
 
 .dev-work span:nth-child(1){
     font-size: 3rem;
