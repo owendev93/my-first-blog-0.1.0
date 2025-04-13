@@ -1155,7 +1155,7 @@ body {
     opacity: 0.6;
 }
     
- 
+
 @keyframes show{
     0%{
         transform: translateX(100%);
