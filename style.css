@@ -1128,11 +1128,12 @@ body {
     width: 400px;
     display: grid;
     grid-template-columns: 70px 1fr 70px;
-    border-radius: 5px;
-    --color: #0abf30;
+    border-radius: 7px;
+    opacity: 0.9;
+    --color: #E67E22;
     background-image: 
         linear-gradient(
-            to right, #0abf3055, #22242f 30%
+            to right,rgb(185, 125, 71), #22242f 30%
         );
     animation: show 0.5s ease 1 forwards
 }
@@ -1203,13 +1204,15 @@ body {
             to right, #ff990055, #22242f 30%
         );
 }
+
+/*
 .toast.info{
     --color: #00aaff;
     background-image: 
         linear-gradient(
             to right, #00aaff55, #22242f 30%
         );
-}
+}*/
 /*End of Alert*/
 
 /* End of Contact */
