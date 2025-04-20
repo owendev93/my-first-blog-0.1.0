@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //Envio de datos a traves del formulario de contacto
-const btn = document.getElementById('button');
+/*const btn = document.getElementById('button');
 let notification = document.querySelector('.notification');
 
 function createToast(type, icon, title, text) {
@@ -114,7 +114,62 @@ emailjs.sendForm(serviceID, templateID, this)
     btn.value = 'Send Email';
     alert(JSON.stringify(err));
     });
+});*/
+
+const btn = document.getElementById('button');
+let notification = document.querySelector('.notification');
+
+function createToast(type, icon, title, text) {
+let newToast = document.createElement('div');
+newToast.innerHTML = `
+    <div class="toast ${type}">
+    <i class="${icon}"></i>
+    <div class="content">
+        <div class="title">${title}</div>
+        <span>${text}</span>
+    </div>
+    <i class="fa-solid fa-xmark" onclick="(this.parentElement).remove()"></i>
+    </div>`;
+notification.appendChild(newToast);
+newToast.timeOut = setTimeout(() => newToast.remove(), 5000);
+}
+
+document.getElementById('form').addEventListener('submit', function(event) {
+event.preventDefault();
+
+  // Validación personalizada de campos requeridos
+const requiredFields = this.querySelectorAll('[required]');
+let emptyField = false;
+
+requiredFields.forEach(field => {
+    if (!field.value.trim()) {
+    emptyField = true;
+    }
 });
+
+if (emptyField) {
+    createToast('warning', 'fa-solid fa-triangle-exclamation', 'Campos incompletos', 'Por favor, completa todos los campos obligatorios.');
+    return; // Evita el envío si hay campos vacíos
+}
+
+btn.value = 'Sending...';
+
+const serviceID = 'default_service';
+const templateID = 'template_cm5n0dn';
+
+emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+    btn.value = 'Send Email';
+    createToast('success', 'fa-solid fa-check-circle', '¡Éxito!', 'El correo fue enviado correctamente.');
+    this.reset();
+    }, (err) => {
+    btn.value = 'Send Email';
+    createToast('error', 'fa-solid fa-circle-exclamation', 'Error', 'Ocurrió un problema al enviar el correo.');
+    console.error(err);
+    });
+});
+
+
 
 
 
